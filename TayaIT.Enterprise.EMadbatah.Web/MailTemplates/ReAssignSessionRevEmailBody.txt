@@ -1,0 +1,4 @@
+﻿لقد تم إعادة تخصيص مراجعة مضبطة الجلسة <%SessionName%> بتاريخ <%SessionDate%> من المستخدم <%OldUserName%> إلى المستخدم <%NewUserName%>
+<br/>
+عن طريق مدير النظام : <%AdminName%>
+<br/>

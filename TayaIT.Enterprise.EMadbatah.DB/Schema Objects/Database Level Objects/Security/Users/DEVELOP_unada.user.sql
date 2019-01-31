@@ -1,0 +1,2 @@
+﻿CREATE USER [DEVELOP\unada] FOR LOGIN [DEVELOP\unada];
+

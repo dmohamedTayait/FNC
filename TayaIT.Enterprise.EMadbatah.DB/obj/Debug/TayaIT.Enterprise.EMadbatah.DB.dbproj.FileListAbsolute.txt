@@ -1,0 +1,16 @@
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Script.PreDeployment.sql
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Script.PostDeployment.sql
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Database.sqlsettings
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Database.sqldeployment
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Database.sqlcmdvars
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB.deploymanifest
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB.dbschema
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DB\obj\Debug\TayaIT.Enterprise.EMadbatah.DB.dbschema
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Script.PreDeployment.sql
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Script.PostDeployment.sql
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Database.sqlsettings
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Database.sqldeployment
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB_Database.sqlcmdvars
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB.deploymanifest
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DB\sql\debug\TayaIT.Enterprise.EMadbatah.DB.dbschema
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DB\obj\Debug\TayaIT.Enterprise.EMadbatah.DB.dbschema

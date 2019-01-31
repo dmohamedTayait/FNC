@@ -1,0 +1,25 @@
+1. create macro caled FilePrintToPrinter1 with below deinition
+
+
+Sub FilePrintToPrinter1()
+    ActivePrinter = "Bullzip PDF Printer"
+    Application.PrintOut _
+        FileName:="", _
+        Range:=wdPrintAllDocument, _
+        Item:=wdPrintDocumentWithMarkup, _
+        Copies:=1, _
+        Pages:="", _
+        PageType:=wdPrintAllPages, _
+        Collate:=True, _
+        Background:=True, _
+        PrintToFile:=False, _
+        PrintZoomColumn:=0, _
+        PrintZoomRow:=0, _
+        PrintZoomPaperWidth:=0, _
+        PrintZoomPaperHeight:=0
+    Application.WindowState = wdWindowStateMaximize
+End Sub
+
+
+2. Use the below command
+"C:\Program Files (x86)\Microsoft Office\Office12\WINWORD.EXE" sessionStartDoc.docx /q /n /mFilePrintToPrinter1 /mFileExit

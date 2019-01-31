@@ -1,0 +1,1379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EMadbatahModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EMadbatahModelStoreContainer">
+          <EntitySet Name="AgendaItem" EntityType="EMadbatahModel.Store.AgendaItem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Attachement" EntityType="EMadbatahModel.Store.Attachement" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Attendant" EntityType="EMadbatahModel.Store.Attendant" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AttendantState" EntityType="EMadbatahModel.Store.AttendantState" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AttendantType" EntityType="EMadbatahModel.Store.AttendantType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Role" EntityType="EMadbatahModel.Store.Role" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Session" EntityType="EMadbatahModel.Store.Session" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SessionAttendant" EntityType="EMadbatahModel.Store.SessionAttendant" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SessionContentItem" EntityType="EMadbatahModel.Store.SessionContentItem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SessionContentItemStatus" EntityType="EMadbatahModel.Store.SessionContentItemStatus" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SessionFile" EntityType="EMadbatahModel.Store.SessionFile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SessionStart" EntityType="EMadbatahModel.Store.SessionStart" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SessionStatus" EntityType="EMadbatahModel.Store.SessionStatus" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="User" EntityType="EMadbatahModel.Store.User" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Agenda_Agenda" Association="EMadbatahModel.Store.FK_Agenda_Agenda">
+            <End Role="AgendaItem" EntitySet="AgendaItem" />
+            <End Role="AgendaItem1" EntitySet="AgendaItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attachement_Session" Association="EMadbatahModel.Store.FK_Attachement_Session">
+            <End Role="Session" EntitySet="Session" />
+            <End Role="Attachement" EntitySet="Attachement" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attendant_AttendantState" Association="EMadbatahModel.Store.FK_Attendant_AttendantState">
+            <End Role="AttendantState" EntitySet="AttendantState" />
+            <End Role="Attendant" EntitySet="Attendant" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attendant_AttendantType" Association="EMadbatahModel.Store.FK_Attendant_AttendantType">
+            <End Role="AttendantType" EntitySet="AttendantType" />
+            <End Role="Attendant" EntitySet="Attendant" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_AgendaItem" Association="EMadbatahModel.Store.FK_Session_AgendaItem">
+            <End Role="AgendaItem" EntitySet="AgendaItem" />
+            <End Role="Session" EntitySet="Session" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_SessionStatus1" Association="EMadbatahModel.Store.FK_Session_SessionStatus1">
+            <End Role="SessionStatus" EntitySet="SessionStatus" />
+            <End Role="Session" EntitySet="Session" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_User" Association="EMadbatahModel.Store.FK_Session_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="Session" EntitySet="Session" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionAttendant_Attendant" Association="EMadbatahModel.Store.FK_SessionAttendant_Attendant">
+            <End Role="Attendant" EntitySet="Attendant" />
+            <End Role="SessionAttendant" EntitySet="SessionAttendant" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionAttendant_Session" Association="EMadbatahModel.Store.FK_SessionAttendant_Session">
+            <End Role="Session" EntitySet="Session" />
+            <End Role="SessionAttendant" EntitySet="SessionAttendant" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_Agenda" Association="EMadbatahModel.Store.FK_SessionContent_Agenda">
+            <End Role="AgendaItem" EntitySet="AgendaItem" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_Attendant" Association="EMadbatahModel.Store.FK_SessionContent_Attendant">
+            <End Role="Attendant" EntitySet="Attendant" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_Session" Association="EMadbatahModel.Store.FK_SessionContent_Session">
+            <End Role="Session" EntitySet="Session" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_SessionContent" Association="EMadbatahModel.Store.FK_SessionContent_SessionContent">
+            <End Role="SessionContentItem" EntitySet="SessionContentItem" />
+            <End Role="SessionContentItem1" EntitySet="SessionContentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_SessionContentItemStatus" Association="EMadbatahModel.Store.FK_SessionContent_SessionContentItemStatus">
+            <End Role="SessionContentItemStatus" EntitySet="SessionContentItemStatus" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_SessionFile" Association="EMadbatahModel.Store.FK_SessionContent_SessionFile">
+            <End Role="SessionFile" EntitySet="SessionFile" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_User" Association="EMadbatahModel.Store.FK_SessionContent_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_User1" Association="EMadbatahModel.Store.FK_SessionContent_User1">
+            <End Role="User" EntitySet="User" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionFile_Session" Association="EMadbatahModel.Store.FK_SessionFile_Session">
+            <End Role="Session" EntitySet="Session" />
+            <End Role="SessionFile" EntitySet="SessionFile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionFile_User" Association="EMadbatahModel.Store.FK_SessionFile_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="SessionFile" EntitySet="SessionFile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionStart_User" Association="EMadbatahModel.Store.FK_SessionStart_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="SessionStart" EntitySet="SessionStart" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Role" Association="EMadbatahModel.Store.FK_User_Role">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AgendaItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="ParentID" Type="bigint" />
+          <Property Name="EParliamentID" Type="bigint" Nullable="false" />
+          <Property Name="IsCustom" Type="bit" />
+        </EntityType>
+        <EntityType Name="Attachement">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="Order" Type="int" Nullable="false" />
+          <Property Name="SessionID" Type="bigint" Nullable="false" />
+          <Property Name="FileType" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="FileContent" Type="varbinary(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Attendant">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="JobTitle" Type="nvarchar" MaxLength="500" />
+          <Property Name="Type" Type="int" />
+          <Property Name="State" Type="int" />
+          <Property Name="EparlimentID" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AttendantState">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="AttendantType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'FK_SessionStart_Session' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="500" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="DateHijri" Type="datetime" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="Type" Type="varchar" MaxLength="200" />
+          <Property Name="State" Type="varchar" MaxLength="200" />
+          <Property Name="President" Type="varchar" MaxLength="200" />
+          <Property Name="Place" Type="varchar" MaxLength="200" />
+          <Property Name="AgendaID" Type="bigint" Nullable="false" />
+          <Property Name="SessionStatusID" Type="int" Nullable="false" />
+          <Property Name="EParliamentID" Type="bigint" Nullable="false" />
+          <Property Name="Season" Type="bigint" Nullable="false" />
+          <Property Name="Stage" Type="bigint" Nullable="false" />
+          <Property Name="StageType" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="Serial" Type="bigint" Nullable="false" />
+          <Property Name="SessionStartID" Type="bigint" />
+          <Property Name="SessionMadbatahWord" Type="varbinary(max)" />
+          <Property Name="SessionMadbatahPDF" Type="varbinary(max)" />
+          <Property Name="SessionMadbatahWordFinal" Type="varbinary(max)" />
+          <Property Name="SessionMadbatahPDFFinal" Type="varbinary(max)" />
+          <Property Name="ReviewerID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="SessionAttendant">
+          <Key>
+            <PropertyRef Name="SessionID" />
+            <PropertyRef Name="AttendantID" />
+          </Key>
+          <Property Name="SessionID" Type="bigint" Nullable="false" />
+          <Property Name="AttendantID" Type="bigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SessionContentItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SessionFileID" Type="bigint" />
+          <Property Name="SessionID" Type="bigint" Nullable="false" />
+          <Property Name="Text" Type="ntext" Nullable="false" />
+          <Property Name="AttendantID" Type="bigint" Nullable="false" />
+          <Property Name="AgendaItemID" Type="bigint" Nullable="false" />
+          <Property Name="UserID" Type="bigint" Nullable="false" />
+          <Property Name="StatusID" Type="int" Nullable="false" />
+          <Property Name="ReviewerUserID" Type="bigint" />
+          <Property Name="ReviewerNote" Type="ntext" />
+          <Property Name="CommentOnText" Type="nvarchar(max)" />
+          <Property Name="CommentOnAttendant" Type="nvarchar" MaxLength="500" />
+          <Property Name="PageFooter" Type="nvarchar" MaxLength="500" />
+          <Property Name="UpdatedByReviewer" Type="bit" Nullable="false" />
+          <Property Name="MergedWithID" Type="bigint" />
+          <Property Name="FragOrderInXml" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SessionContentItemStatus">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="SessionFile">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="SessionID" Type="bigint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="DurationSecs" Type="bigint" Nullable="false" />
+          <Property Name="Status" Type="bit" Nullable="false" />
+          <Property Name="UserID" Type="bigint" />
+          <Property Name="LastInsertedFragNumInXml" Type="int" Nullable="false" />
+          <Property Name="Completed" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SessionStart">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="Text" Type="ntext" Nullable="false" />
+          <Property Name="UserID" Type="bigint" />
+        </EntityType>
+        <EntityType Name="SessionStatus">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FName" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="RoleID" Type="bigint" Nullable="false" />
+          <Property Name="DomainUserName" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="Email" Type="nvarchar" MaxLength="500" />
+          <Property Name="Status" Type="bit" Nullable="false" />
+          <Property Name="LName" Type="nvarchar" Nullable="false" MaxLength="500" />
+        </EntityType>
+        <Association Name="FK_Agenda_Agenda">
+          <End Role="AgendaItem" Type="EMadbatahModel.Store.AgendaItem" Multiplicity="0..1" />
+          <End Role="AgendaItem1" Type="EMadbatahModel.Store.AgendaItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AgendaItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="AgendaItem1">
+              <PropertyRef Name="ParentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attachement_Session">
+          <End Role="Session" Type="EMadbatahModel.Store.Session" Multiplicity="1" />
+          <End Role="Attachement" Type="EMadbatahModel.Store.Attachement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Session">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Attachement">
+              <PropertyRef Name="SessionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attendant_AttendantState">
+          <End Role="AttendantState" Type="EMadbatahModel.Store.AttendantState" Multiplicity="0..1" />
+          <End Role="Attendant" Type="EMadbatahModel.Store.Attendant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AttendantState">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Attendant">
+              <PropertyRef Name="State" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attendant_AttendantType">
+          <End Role="AttendantType" Type="EMadbatahModel.Store.AttendantType" Multiplicity="0..1" />
+          <End Role="Attendant" Type="EMadbatahModel.Store.Attendant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AttendantType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Attendant">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_AgendaItem">
+          <End Role="AgendaItem" Type="EMadbatahModel.Store.AgendaItem" Multiplicity="1" />
+          <End Role="Session" Type="EMadbatahModel.Store.Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AgendaItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="AgendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_SessionStatus1">
+          <End Role="SessionStatus" Type="EMadbatahModel.Store.SessionStatus" Multiplicity="1" />
+          <End Role="Session" Type="EMadbatahModel.Store.Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionStatus">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="SessionStatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_User">
+          <End Role="User" Type="EMadbatahModel.Store.User" Multiplicity="0..1" />
+          <End Role="Session" Type="EMadbatahModel.Store.Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="ReviewerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionAttendant_Attendant">
+          <End Role="Attendant" Type="EMadbatahModel.Store.Attendant" Multiplicity="1" />
+          <End Role="SessionAttendant" Type="EMadbatahModel.Store.SessionAttendant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Attendant">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionAttendant">
+              <PropertyRef Name="AttendantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionAttendant_Session">
+          <End Role="Session" Type="EMadbatahModel.Store.Session" Multiplicity="1" />
+          <End Role="SessionAttendant" Type="EMadbatahModel.Store.SessionAttendant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Session">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionAttendant">
+              <PropertyRef Name="SessionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_Agenda">
+          <End Role="AgendaItem" Type="EMadbatahModel.Store.AgendaItem" Multiplicity="1" />
+          <End Role="SessionContentItem" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AgendaItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="AgendaItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_Attendant">
+          <End Role="Attendant" Type="EMadbatahModel.Store.Attendant" Multiplicity="1" />
+          <End Role="SessionContentItem" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Attendant">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="AttendantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_Session">
+          <End Role="Session" Type="EMadbatahModel.Store.Session" Multiplicity="1" />
+          <End Role="SessionContentItem" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Session">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="SessionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_SessionContent">
+          <End Role="SessionContentItem" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="0..1" />
+          <End Role="SessionContentItem1" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionContentItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem1">
+              <PropertyRef Name="MergedWithID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_SessionContentItemStatus">
+          <End Role="SessionContentItemStatus" Type="EMadbatahModel.Store.SessionContentItemStatus" Multiplicity="1" />
+          <End Role="SessionContentItem" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionContentItemStatus">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="StatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_SessionFile">
+          <End Role="SessionFile" Type="EMadbatahModel.Store.SessionFile" Multiplicity="0..1" />
+          <End Role="SessionContentItem" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionFile">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="SessionFileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_User">
+          <End Role="User" Type="EMadbatahModel.Store.User" Multiplicity="1" />
+          <End Role="SessionContentItem" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_User1">
+          <End Role="User" Type="EMadbatahModel.Store.User" Multiplicity="0..1" />
+          <End Role="SessionContentItem" Type="EMadbatahModel.Store.SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="ReviewerUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionFile_Session">
+          <End Role="Session" Type="EMadbatahModel.Store.Session" Multiplicity="1" />
+          <End Role="SessionFile" Type="EMadbatahModel.Store.SessionFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Session">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionFile">
+              <PropertyRef Name="SessionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionFile_User">
+          <End Role="User" Type="EMadbatahModel.Store.User" Multiplicity="0..1" />
+          <End Role="SessionFile" Type="EMadbatahModel.Store.SessionFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionFile">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionStart_User">
+          <End Role="User" Type="EMadbatahModel.Store.User" Multiplicity="0..1" />
+          <End Role="SessionStart" Type="EMadbatahModel.Store.SessionStart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionStart">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Role">
+          <End Role="Role" Type="EMadbatahModel.Store.Role" Multiplicity="1" />
+          <End Role="User" Type="EMadbatahModel.Store.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EMadbatahModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="EMadbatahEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AgendaItems" EntityType="EMadbatahModel.AgendaItem" />
+          <EntitySet Name="Attachements" EntityType="EMadbatahModel.Attachement" />
+          <EntitySet Name="Attendants" EntityType="EMadbatahModel.Attendant" />
+          <EntitySet Name="AttendantStates" EntityType="EMadbatahModel.AttendantState" />
+          <EntitySet Name="AttendantTypes" EntityType="EMadbatahModel.AttendantType" />
+          <EntitySet Name="Roles" EntityType="EMadbatahModel.Role" />
+          <EntitySet Name="Sessions" EntityType="EMadbatahModel.Session" />
+          <EntitySet Name="SessionContentItems" EntityType="EMadbatahModel.SessionContentItem" />
+          <EntitySet Name="SessionContentItemStatus" EntityType="EMadbatahModel.SessionContentItemStatu" />
+          <EntitySet Name="SessionFiles" EntityType="EMadbatahModel.SessionFile" />
+          <EntitySet Name="SessionStarts" EntityType="EMadbatahModel.SessionStart" />
+          <EntitySet Name="SessionStatus1" EntityType="EMadbatahModel.SessionStatus" />
+          <EntitySet Name="Users" EntityType="EMadbatahModel.User" />
+          <AssociationSet Name="FK_Agenda_Agenda" Association="EMadbatahModel.FK_Agenda_Agenda">
+            <End Role="AgendaItem" EntitySet="AgendaItems" />
+            <End Role="AgendaItem1" EntitySet="AgendaItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_AgendaItem" Association="EMadbatahModel.FK_Session_AgendaItem">
+            <End Role="AgendaItem" EntitySet="AgendaItems" />
+            <End Role="Session" EntitySet="Sessions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_Agenda" Association="EMadbatahModel.FK_SessionContent_Agenda">
+            <End Role="AgendaItem" EntitySet="AgendaItems" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attachement_Session" Association="EMadbatahModel.FK_Attachement_Session">
+            <End Role="Session" EntitySet="Sessions" />
+            <End Role="Attachement" EntitySet="Attachements" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attendant_AttendantState" Association="EMadbatahModel.FK_Attendant_AttendantState">
+            <End Role="AttendantState" EntitySet="AttendantStates" />
+            <End Role="Attendant" EntitySet="Attendants" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Attendant_AttendantType" Association="EMadbatahModel.FK_Attendant_AttendantType">
+            <End Role="AttendantType" EntitySet="AttendantTypes" />
+            <End Role="Attendant" EntitySet="Attendants" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_Attendant" Association="EMadbatahModel.FK_SessionContent_Attendant">
+            <End Role="Attendant" EntitySet="Attendants" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Role" Association="EMadbatahModel.FK_User_Role">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_SessionStatus1" Association="EMadbatahModel.FK_Session_SessionStatus1">
+            <End Role="SessionStatu" EntitySet="SessionStatus1" />
+            <End Role="Session" EntitySet="Sessions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Session_User" Association="EMadbatahModel.FK_Session_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Session" EntitySet="Sessions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_Session" Association="EMadbatahModel.FK_SessionContent_Session">
+            <End Role="Session" EntitySet="Sessions" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionFile_Session" Association="EMadbatahModel.FK_SessionFile_Session">
+            <End Role="Session" EntitySet="Sessions" />
+            <End Role="SessionFile" EntitySet="SessionFiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_SessionContent" Association="EMadbatahModel.FK_SessionContent_SessionContent">
+            <End Role="SessionContentItem" EntitySet="SessionContentItems" />
+            <End Role="SessionContentItem1" EntitySet="SessionContentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_SessionContentItemStatus" Association="EMadbatahModel.FK_SessionContent_SessionContentItemStatus">
+            <End Role="SessionContentItemStatu" EntitySet="SessionContentItemStatus" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_SessionFile" Association="EMadbatahModel.FK_SessionContent_SessionFile">
+            <End Role="SessionFile" EntitySet="SessionFiles" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_User" Association="EMadbatahModel.FK_SessionContent_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionContent_User1" Association="EMadbatahModel.FK_SessionContent_User1">
+            <End Role="User" EntitySet="Users" />
+            <End Role="SessionContentItem" EntitySet="SessionContentItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionFile_User" Association="EMadbatahModel.FK_SessionFile_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="SessionFile" EntitySet="SessionFiles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SessionStart_User" Association="EMadbatahModel.FK_SessionStart_User">
+            <End Role="User" EntitySet="Users" />
+            <End Role="SessionStart" EntitySet="SessionStarts" />
+          </AssociationSet>
+          <AssociationSet Name="SessionAttendant" Association="EMadbatahModel.SessionAttendant">
+            <End Role="Attendant" EntitySet="Attendants" />
+            <End Role="Session" EntitySet="Sessions" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AgendaItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="ParentID" />
+          <Property Type="Int64" Name="EParliamentID" Nullable="false" />
+          <Property Type="Boolean" Name="IsCustom" />
+          <NavigationProperty Name="AgendaItem1" Relationship="EMadbatahModel.FK_Agenda_Agenda" FromRole="AgendaItem" ToRole="AgendaItem1" />
+          <NavigationProperty Name="AgendaItem2" Relationship="EMadbatahModel.FK_Agenda_Agenda" FromRole="AgendaItem1" ToRole="AgendaItem" />
+          <NavigationProperty Name="Sessions" Relationship="EMadbatahModel.FK_Session_AgendaItem" FromRole="AgendaItem" ToRole="Session" />
+          <NavigationProperty Name="SessionContentItems" Relationship="EMadbatahModel.FK_SessionContent_Agenda" FromRole="AgendaItem" ToRole="SessionContentItem" />
+        </EntityType>
+        <EntityType Name="Attachement">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Order" Nullable="false" />
+          <Property Type="Int64" Name="SessionID" Nullable="false" />
+          <Property Type="String" Name="FileType" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="FileContent" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="Session" Relationship="EMadbatahModel.FK_Attachement_Session" FromRole="Attachement" ToRole="Session" />
+        </EntityType>
+        <EntityType Name="Attendant">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="JobTitle" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Type" />
+          <Property Type="Int32" Name="State" />
+          <Property Type="Int64" Name="EparlimentID" Nullable="false" />
+          <NavigationProperty Name="AttendantState" Relationship="EMadbatahModel.FK_Attendant_AttendantState" FromRole="Attendant" ToRole="AttendantState" />
+          <NavigationProperty Name="AttendantType" Relationship="EMadbatahModel.FK_Attendant_AttendantType" FromRole="Attendant" ToRole="AttendantType" />
+          <NavigationProperty Name="SessionContentItems" Relationship="EMadbatahModel.FK_SessionContent_Attendant" FromRole="Attendant" ToRole="SessionContentItem" />
+          <NavigationProperty Name="Sessions" Relationship="EMadbatahModel.SessionAttendant" FromRole="Attendant" ToRole="Session" />
+        </EntityType>
+        <EntityType Name="AttendantState">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Attendants" Relationship="EMadbatahModel.FK_Attendant_AttendantState" FromRole="AttendantState" ToRole="Attendant" />
+        </EntityType>
+        <EntityType Name="AttendantType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Attendants" Relationship="EMadbatahModel.FK_Attendant_AttendantType" FromRole="AttendantType" ToRole="Attendant" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Users" Relationship="EMadbatahModel.FK_User_Role" FromRole="Role" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Session">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Date" Nullable="false" />
+          <Property Type="DateTime" Name="DateHijri" Nullable="false" />
+          <Property Type="DateTime" Name="StartTime" />
+          <Property Type="DateTime" Name="EndTime" />
+          <Property Type="String" Name="Type" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="State" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="President" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Place" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="AgendaID" Nullable="false" />
+          <Property Type="Int32" Name="SessionStatusID" Nullable="false" />
+          <Property Type="Int64" Name="EParliamentID" Nullable="false" />
+          <Property Type="Int64" Name="Season" Nullable="false" />
+          <Property Type="Int64" Name="Stage" Nullable="false" />
+          <Property Type="String" Name="StageType" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="Serial" Nullable="false" />
+          <Property Type="Int64" Name="SessionStartID" />
+          <Property Type="Binary" Name="SessionMadbatahWord" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="SessionMadbatahPDF" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="SessionMadbatahWordFinal" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="SessionMadbatahPDFFinal" MaxLength="Max" FixedLength="false" />
+          <Property Type="Int64" Name="ReviewerID" />
+          <NavigationProperty Name="AgendaItem" Relationship="EMadbatahModel.FK_Session_AgendaItem" FromRole="Session" ToRole="AgendaItem" />
+          <NavigationProperty Name="Attachements" Relationship="EMadbatahModel.FK_Attachement_Session" FromRole="Session" ToRole="Attachement" />
+          <NavigationProperty Name="SessionStatus" Relationship="EMadbatahModel.FK_Session_SessionStatus1" FromRole="Session" ToRole="SessionStatu" />
+          <NavigationProperty Name="User" Relationship="EMadbatahModel.FK_Session_User" FromRole="Session" ToRole="User" />
+          <NavigationProperty Name="SessionContentItems" Relationship="EMadbatahModel.FK_SessionContent_Session" FromRole="Session" ToRole="SessionContentItem" />
+          <NavigationProperty Name="SessionFiles" Relationship="EMadbatahModel.FK_SessionFile_Session" FromRole="Session" ToRole="SessionFile" />
+          <NavigationProperty Name="Attendants" Relationship="EMadbatahModel.SessionAttendant" FromRole="Session" ToRole="Attendant" />
+        </EntityType>
+        <EntityType Name="SessionContentItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="SessionFileID" />
+          <Property Type="Int64" Name="SessionID" Nullable="false" />
+          <Property Type="String" Name="Text" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="AttendantID" Nullable="false" />
+          <Property Type="Int64" Name="AgendaItemID" Nullable="false" />
+          <Property Type="Int64" Name="UserID" Nullable="false" />
+          <Property Type="Int32" Name="StatusID" Nullable="false" />
+          <Property Type="Int64" Name="ReviewerUserID" />
+          <Property Type="String" Name="ReviewerNote" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CommentOnText" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CommentOnAttendant" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PageFooter" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="UpdatedByReviewer" Nullable="false" />
+          <Property Type="Int64" Name="MergedWithID" />
+          <Property Type="Int32" Name="FragOrderInXml" Nullable="false" />
+          <NavigationProperty Name="AgendaItem" Relationship="EMadbatahModel.FK_SessionContent_Agenda" FromRole="SessionContentItem" ToRole="AgendaItem" />
+          <NavigationProperty Name="Attendant" Relationship="EMadbatahModel.FK_SessionContent_Attendant" FromRole="SessionContentItem" ToRole="Attendant" />
+          <NavigationProperty Name="Session" Relationship="EMadbatahModel.FK_SessionContent_Session" FromRole="SessionContentItem" ToRole="Session" />
+          <NavigationProperty Name="SessionContentItem1" Relationship="EMadbatahModel.FK_SessionContent_SessionContent" FromRole="SessionContentItem" ToRole="SessionContentItem1" />
+          <NavigationProperty Name="SessionContentItem2" Relationship="EMadbatahModel.FK_SessionContent_SessionContent" FromRole="SessionContentItem1" ToRole="SessionContentItem" />
+          <NavigationProperty Name="SessionContentItemStatu" Relationship="EMadbatahModel.FK_SessionContent_SessionContentItemStatus" FromRole="SessionContentItem" ToRole="SessionContentItemStatu" />
+          <NavigationProperty Name="SessionFile" Relationship="EMadbatahModel.FK_SessionContent_SessionFile" FromRole="SessionContentItem" ToRole="SessionFile" />
+          <NavigationProperty Name="User" Relationship="EMadbatahModel.FK_SessionContent_User" FromRole="SessionContentItem" ToRole="User" />
+          <NavigationProperty Name="User1" Relationship="EMadbatahModel.FK_SessionContent_User1" FromRole="SessionContentItem" ToRole="User" />
+        </EntityType>
+        <EntityType Name="SessionContentItemStatu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="SessionContentItems" Relationship="EMadbatahModel.FK_SessionContent_SessionContentItemStatus" FromRole="SessionContentItemStatu" ToRole="SessionContentItem" />
+        </EntityType>
+        <EntityType Name="SessionFile">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int64" Name="SessionID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="DurationSecs" Nullable="false" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="Int64" Name="UserID" />
+          <Property Type="Int32" Name="LastInsertedFragNumInXml" Nullable="false" />
+          <Property Type="Boolean" Name="Completed" Nullable="false" />
+          <NavigationProperty Name="Session" Relationship="EMadbatahModel.FK_SessionFile_Session" FromRole="SessionFile" ToRole="Session" />
+          <NavigationProperty Name="SessionContentItems" Relationship="EMadbatahModel.FK_SessionContent_SessionFile" FromRole="SessionFile" ToRole="SessionContentItem" />
+          <NavigationProperty Name="User" Relationship="EMadbatahModel.FK_SessionFile_User" FromRole="SessionFile" ToRole="User" />
+        </EntityType>
+        <EntityType Name="SessionStart">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Text" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="UserID" />
+          <NavigationProperty Name="User" Relationship="EMadbatahModel.FK_SessionStart_User" FromRole="SessionStart" ToRole="User" />
+        </EntityType>
+        <EntityType Name="SessionStatus">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Sessions" Relationship="EMadbatahModel.FK_Session_SessionStatus1" FromRole="SessionStatu" ToRole="Session" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="RoleID" Nullable="false" />
+          <Property Type="String" Name="DomainUserName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Email" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Status" Nullable="false" />
+          <Property Type="String" Name="LName" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Role" Relationship="EMadbatahModel.FK_User_Role" FromRole="User" ToRole="Role" />
+          <NavigationProperty Name="Sessions" Relationship="EMadbatahModel.FK_Session_User" FromRole="User" ToRole="Session" />
+          <NavigationProperty Name="SessionContentItems" Relationship="EMadbatahModel.FK_SessionContent_User" FromRole="User" ToRole="SessionContentItem" />
+          <NavigationProperty Name="SessionContentItems1" Relationship="EMadbatahModel.FK_SessionContent_User1" FromRole="User" ToRole="SessionContentItem" />
+          <NavigationProperty Name="SessionFiles" Relationship="EMadbatahModel.FK_SessionFile_User" FromRole="User" ToRole="SessionFile" />
+          <NavigationProperty Name="SessionStarts" Relationship="EMadbatahModel.FK_SessionStart_User" FromRole="User" ToRole="SessionStart" />
+        </EntityType>
+        <Association Name="FK_Agenda_Agenda">
+          <End Type="EMadbatahModel.AgendaItem" Role="AgendaItem" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.AgendaItem" Role="AgendaItem1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AgendaItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="AgendaItem1">
+              <PropertyRef Name="ParentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_AgendaItem">
+          <End Type="EMadbatahModel.AgendaItem" Role="AgendaItem" Multiplicity="1" />
+          <End Type="EMadbatahModel.Session" Role="Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AgendaItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="AgendaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_Agenda">
+          <End Type="EMadbatahModel.AgendaItem" Role="AgendaItem" Multiplicity="1" />
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AgendaItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="AgendaItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attachement_Session">
+          <End Type="EMadbatahModel.Session" Role="Session" Multiplicity="1" />
+          <End Type="EMadbatahModel.Attachement" Role="Attachement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Session">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Attachement">
+              <PropertyRef Name="SessionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attendant_AttendantState">
+          <End Type="EMadbatahModel.AttendantState" Role="AttendantState" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.Attendant" Role="Attendant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AttendantState">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Attendant">
+              <PropertyRef Name="State" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Attendant_AttendantType">
+          <End Type="EMadbatahModel.AttendantType" Role="AttendantType" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.Attendant" Role="Attendant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AttendantType">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Attendant">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_Attendant">
+          <End Type="EMadbatahModel.Attendant" Role="Attendant" Multiplicity="1" />
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Attendant">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="AttendantID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Role">
+          <End Type="EMadbatahModel.Role" Role="Role" Multiplicity="1" />
+          <End Type="EMadbatahModel.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_SessionStatus1">
+          <End Type="EMadbatahModel.SessionStatus" Role="SessionStatu" Multiplicity="1" />
+          <End Type="EMadbatahModel.Session" Role="Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionStatu">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="SessionStatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Session_User">
+          <End Type="EMadbatahModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.Session" Role="Session" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Session">
+              <PropertyRef Name="ReviewerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_Session">
+          <End Type="EMadbatahModel.Session" Role="Session" Multiplicity="1" />
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Session">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="SessionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionFile_Session">
+          <End Type="EMadbatahModel.Session" Role="Session" Multiplicity="1" />
+          <End Type="EMadbatahModel.SessionFile" Role="SessionFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Session">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionFile">
+              <PropertyRef Name="SessionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_SessionContent">
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionContentItem">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem1">
+              <PropertyRef Name="MergedWithID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_SessionContentItemStatus">
+          <End Type="EMadbatahModel.SessionContentItemStatu" Role="SessionContentItemStatu" Multiplicity="1" />
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionContentItemStatu">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="StatusID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_SessionFile">
+          <End Type="EMadbatahModel.SessionFile" Role="SessionFile" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SessionFile">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="SessionFileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_User">
+          <End Type="EMadbatahModel.User" Role="User" Multiplicity="1" />
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionContent_User1">
+          <End Type="EMadbatahModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.SessionContentItem" Role="SessionContentItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionContentItem">
+              <PropertyRef Name="ReviewerUserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionFile_User">
+          <End Type="EMadbatahModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.SessionFile" Role="SessionFile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionFile">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SessionStart_User">
+          <End Type="EMadbatahModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="EMadbatahModel.SessionStart" Role="SessionStart" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SessionStart">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SessionAttendant">
+          <End Type="EMadbatahModel.Attendant" Role="Attendant" Multiplicity="*" />
+          <End Type="EMadbatahModel.Session" Role="Session" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EMadbatahModelStoreContainer" CdmEntityContainer="EMadbatahEntities">
+          <EntitySetMapping Name="AgendaItems">
+            <EntityTypeMapping TypeName="EMadbatahModel.AgendaItem">
+              <MappingFragment StoreEntitySet="AgendaItem">
+                <ScalarProperty Name="IsCustom" ColumnName="IsCustom" />
+                <ScalarProperty Name="EParliamentID" ColumnName="EParliamentID" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Attachements">
+            <EntityTypeMapping TypeName="EMadbatahModel.Attachement">
+              <MappingFragment StoreEntitySet="Attachement">
+                <ScalarProperty Name="FileContent" ColumnName="FileContent" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Attendants">
+            <EntityTypeMapping TypeName="EMadbatahModel.Attendant">
+              <MappingFragment StoreEntitySet="Attendant">
+                <ScalarProperty Name="EparlimentID" ColumnName="EparlimentID" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttendantStates">
+            <EntityTypeMapping TypeName="EMadbatahModel.AttendantState">
+              <MappingFragment StoreEntitySet="AttendantState">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttendantTypes">
+            <EntityTypeMapping TypeName="EMadbatahModel.AttendantType">
+              <MappingFragment StoreEntitySet="AttendantType">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="EMadbatahModel.Role">
+              <MappingFragment StoreEntitySet="Role">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sessions">
+            <EntityTypeMapping TypeName="EMadbatahModel.Session">
+              <MappingFragment StoreEntitySet="Session">
+                <ScalarProperty Name="ReviewerID" ColumnName="ReviewerID" />
+                <ScalarProperty Name="SessionMadbatahPDFFinal" ColumnName="SessionMadbatahPDFFinal" />
+                <ScalarProperty Name="SessionMadbatahWordFinal" ColumnName="SessionMadbatahWordFinal" />
+                <ScalarProperty Name="SessionMadbatahPDF" ColumnName="SessionMadbatahPDF" />
+                <ScalarProperty Name="SessionMadbatahWord" ColumnName="SessionMadbatahWord" />
+                <ScalarProperty Name="SessionStartID" ColumnName="SessionStartID" />
+                <ScalarProperty Name="Serial" ColumnName="Serial" />
+                <ScalarProperty Name="StageType" ColumnName="StageType" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+                <ScalarProperty Name="Season" ColumnName="Season" />
+                <ScalarProperty Name="EParliamentID" ColumnName="EParliamentID" />
+                <ScalarProperty Name="SessionStatusID" ColumnName="SessionStatusID" />
+                <ScalarProperty Name="AgendaID" ColumnName="AgendaID" />
+                <ScalarProperty Name="Place" ColumnName="Place" />
+                <ScalarProperty Name="President" ColumnName="President" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="DateHijri" ColumnName="DateHijri" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SessionContentItems">
+            <EntityTypeMapping TypeName="EMadbatahModel.SessionContentItem">
+              <MappingFragment StoreEntitySet="SessionContentItem">
+                <ScalarProperty Name="FragOrderInXml" ColumnName="FragOrderInXml" />
+                <ScalarProperty Name="MergedWithID" ColumnName="MergedWithID" />
+                <ScalarProperty Name="UpdatedByReviewer" ColumnName="UpdatedByReviewer" />
+                <ScalarProperty Name="PageFooter" ColumnName="PageFooter" />
+                <ScalarProperty Name="CommentOnAttendant" ColumnName="CommentOnAttendant" />
+                <ScalarProperty Name="CommentOnText" ColumnName="CommentOnText" />
+                <ScalarProperty Name="ReviewerNote" ColumnName="ReviewerNote" />
+                <ScalarProperty Name="ReviewerUserID" ColumnName="ReviewerUserID" />
+                <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="AgendaItemID" ColumnName="AgendaItemID" />
+                <ScalarProperty Name="AttendantID" ColumnName="AttendantID" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="SessionFileID" ColumnName="SessionFileID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SessionContentItemStatus">
+            <EntityTypeMapping TypeName="EMadbatahModel.SessionContentItemStatu">
+              <MappingFragment StoreEntitySet="SessionContentItemStatus">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SessionFiles">
+            <EntityTypeMapping TypeName="EMadbatahModel.SessionFile">
+              <MappingFragment StoreEntitySet="SessionFile">
+                <ScalarProperty Name="Completed" ColumnName="Completed" />
+                <ScalarProperty Name="LastInsertedFragNumInXml" ColumnName="LastInsertedFragNumInXml" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DurationSecs" ColumnName="DurationSecs" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SessionStarts">
+            <EntityTypeMapping TypeName="EMadbatahModel.SessionStart">
+              <MappingFragment StoreEntitySet="SessionStart">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SessionStatus1">
+            <EntityTypeMapping TypeName="EMadbatahModel.SessionStatus">
+              <MappingFragment StoreEntitySet="SessionStatus">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="EMadbatahModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="LName" ColumnName="LName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DomainUserName" ColumnName="DomainUserName" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="FName" ColumnName="FName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="SessionAttendant" TypeName="EMadbatahModel.SessionAttendant" StoreEntitySet="SessionAttendant">
+            <EndProperty Name="Session">
+              <ScalarProperty Name="ID" ColumnName="SessionID" />
+            </EndProperty>
+            <EndProperty Name="Attendant">
+              <ScalarProperty Name="ID" ColumnName="AttendantID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EMadbatahModel">
+        <EntityTypeShape EntityType="EMadbatahModel.AgendaItem" Width="1.5" PointX="3" PointY="2.875" Height="2.4140429687500031" />
+        <EntityTypeShape EntityType="EMadbatahModel.Attachement" Width="1.5" PointX="7.5" PointY="7.375" Height="2.0853483072916674" />
+        <EntityTypeShape EntityType="EMadbatahModel.Attendant" Width="1.5" PointX="3" PointY="11.625" Height="2.5783902994791674" />
+        <EntityTypeShape EntityType="EMadbatahModel.AttendantState" Width="1.5" PointX="0.75" PointY="11" Height="1.4279589843750031" />
+        <EntityTypeShape EntityType="EMadbatahModel.AttendantType" Width="1.5" PointX="0.75" PointY="13.25" Height="1.4279589843750031" />
+        <EntityTypeShape EntityType="EMadbatahModel.Role" Width="1.5" PointX="0.75" PointY="7.625" Height="1.4279589843750031" />
+        <EntityTypeShape EntityType="EMadbatahModel.Session" Width="1.5" PointX="5.25" PointY="5.375" Height="5.865336914062496" />
+        <EntityTypeShape EntityType="EMadbatahModel.SessionContentItem" Width="1.5" PointX="10.5" PointY="5.875" Height="5.0436002604166674" />
+        <EntityTypeShape EntityType="EMadbatahModel.SessionContentItemStatu" Width="1.5" PointX="8.25" PointY="10.625" Height="1.427958984374996" />
+        <EntityTypeShape EntityType="EMadbatahModel.SessionFile" Width="1.5" PointX="7.5" PointY="3" Height="2.7427376302083246" />
+        <EntityTypeShape EntityType="EMadbatahModel.SessionStart" Width="1.5" PointX="5.25" PointY="14.125" Height="1.5923063151041674" />
+        <EntityTypeShape EntityType="EMadbatahModel.SessionStatus" Width="1.5" PointX="3" PointY="15.375" Height="1.427958984374996" />
+        <EntityTypeShape EntityType="EMadbatahModel.User" Width="1.5" PointX="3" PointY="6.875" Height="3.0714322916666674" />
+        <AssociationConnector Association="EMadbatahModel.FK_Agenda_Agenda" >
+          <ConnectorPoint PointX="3.5319230769230767" PointY="5.2890429687500031" />
+          <ConnectorPoint PointX="3.5319230769230767" PointY="5.5390429687500031" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="5.5390429687500031" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="5.2890429687500031" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_Session_AgendaItem" >
+          <ConnectorPoint PointX="4.5" PointY="4.0820214843750016" />
+          <ConnectorPoint PointX="6" PointY="4.0820214843750016" />
+          <ConnectorPoint PointX="6" PointY="5.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionContent_Agenda" >
+          <ConnectorPoint PointX="4.5" PointY="2.90625" />
+          <ConnectorPoint PointX="11.25" PointY="2.90625" />
+          <ConnectorPoint PointX="11.25" PointY="5.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_Attachement_Session" >
+          <ConnectorPoint PointX="6.75" PointY="8.4176741536458337" />
+          <ConnectorPoint PointX="7.5" PointY="8.4176741536458337" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_Attendant_AttendantState" >
+          <ConnectorPoint PointX="2.25" PointY="12.026479492187502" />
+          <ConnectorPoint PointX="3" PointY="12.026479492187502" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_Attendant_AttendantType" >
+          <ConnectorPoint PointX="2.25" PointY="13.726695149739584" />
+          <ConnectorPoint PointX="3" PointY="13.726695149739584" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionContent_Attendant" >
+          <ConnectorPoint PointX="4.5" PointY="13.088979492187498" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="13.088979492187498" />
+          <ConnectorPoint PointX="5.020833333333333" PointY="13.088979492187498" />
+          <ConnectorPoint PointX="11.25" PointY="13.088979492187498" />
+          <ConnectorPoint PointX="11.25" PointY="10.918600260416667" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_User_Role" >
+          <ConnectorPoint PointX="2.25" PointY="8.3389794921875016" />
+          <ConnectorPoint PointX="3" PointY="8.3389794921875016" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_Session_SessionStatus1" >
+          <ConnectorPoint PointX="4.5" PointY="15.376097429987981" />
+          <ConnectorPoint PointX="4.875" PointY="15.001097429987979" />
+          <ConnectorPoint PointX="4.875" PointY="8.307668457031248" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="8.307668457031248" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="8.307668457031248" />
+          <ConnectorPoint PointX="5.25" PointY="8.307668457031248" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_Session_User" >
+          <ConnectorPoint PointX="4.5" PointY="9.1895503743489577" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="9.1895503743489559" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="9.1895503743489577" />
+          <ConnectorPoint PointX="5.25" PointY="9.1895503743489577" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionContent_Session" >
+          <ConnectorPoint PointX="6.75" PointY="6.59375" />
+          <ConnectorPoint PointX="10.5" PointY="6.59375" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionFile_Session" >
+          <ConnectorPoint PointX="6.75" PointY="5.5588688151041623" />
+          <ConnectorPoint PointX="7.5" PointY="5.5588688151041623" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionContent_SessionContent" >
+          <ConnectorPoint PointX="12" PointY="7.6062954727564112" />
+          <ConnectorPoint PointX="12.25" PointY="7.6062954727564112" />
+          <ConnectorPoint PointX="12.25" PointY="9.22494786658654" />
+          <ConnectorPoint PointX="12" PointY="9.22494786658654" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionContent_SessionContentItemStatus" >
+          <ConnectorPoint PointX="9.75" PointY="10.771800130208334" />
+          <ConnectorPoint PointX="10.5" PointY="10.771800130208334" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionContent_SessionFile" >
+          <ConnectorPoint PointX="9" PointY="4.3713688151041623" />
+          <ConnectorPoint PointX="10.8437475" PointY="4.3713688151041623" />
+          <ConnectorPoint PointX="10.8437475" PointY="5.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionContent_User" >
+          <ConnectorPoint PointX="3.75" PointY="9.9464322916666674" />
+          <ConnectorPoint PointX="3.75" PointY="11.490336914062496" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="11.490336914062494" />
+          <ConnectorPoint PointX="5.08448617948718" PointY="11.490336914062496" />
+          <ConnectorPoint PointX="7.666666666666667" PointY="11.490336914062496" />
+          <ConnectorPoint PointX="7.833333333333333" PointY="11.490336914062496" />
+          <ConnectorPoint PointX="8" PointY="11.490336914062496" />
+          <ConnectorPoint PointX="8" PointY="10.375" />
+          <ConnectorPoint PointX="10.125" PointY="10.375" />
+          <ConnectorPoint PointX="10.125" PointY="8.6827750651041669" />
+          <ConnectorPoint PointX="10.5" PointY="8.6827750651041669" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionContent_User1" >
+          <ConnectorPoint PointX="3.75" PointY="6.875" />
+          <ConnectorPoint PointX="3.75" PointY="6.625" />
+          <ConnectorPoint PointX="4.666666666666667" PointY="6.6249999999999991" />
+          <ConnectorPoint PointX="4.833333333333333" PointY="6.625" />
+          <ConnectorPoint PointX="5" PointY="6.625" />
+          <ConnectorPoint PointX="5" PointY="11.740336914062496" />
+          <ConnectorPoint PointX="7.75" PointY="11.740336914062496" />
+          <ConnectorPoint PointX="7.75" PointY="10.125" />
+          <ConnectorPoint PointX="9.875" PointY="10.125" />
+          <ConnectorPoint PointX="9.875" PointY="7.6382625325520834" />
+          <ConnectorPoint PointX="10.5" PointY="7.6382625325520834" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionFile_User" >
+          <ConnectorPoint PointX="4.5" PointY="6.875" />
+          <ConnectorPoint PointX="4.875" PointY="6.5" />
+          <ConnectorPoint PointX="4.875" PointY="4.6972607421875008" />
+          <ConnectorPoint PointX="5.916666666666667" PointY="4.6972607421875" />
+          <ConnectorPoint PointX="6.083333333333333" PointY="4.6972607421875008" />
+          <ConnectorPoint PointX="7.5" PointY="4.6972607421875008" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.FK_SessionStart_User" >
+          <ConnectorPoint PointX="4.5" PointY="9.8841235993589756" />
+          <ConnectorPoint PointX="4.8160744349011217" PointY="10.200198034260096" />
+          <ConnectorPoint PointX="4.9339255650988791" PointY="10.318049164457854" />
+          <ConnectorPoint PointX="4.9375" PointY="10.321623599358976" />
+          <ConnectorPoint PointX="4.9375" PointY="14.921153157552084" />
+          <ConnectorPoint PointX="5.25" PointY="14.921153157552084" />
+        </AssociationConnector>
+        <AssociationConnector Association="EMadbatahModel.SessionAttendant" >
+          <ConnectorPoint PointX="4.5" PointY="11.657306692307694" />
+          <ConnectorPoint PointX="4.65625" PointY="11.501056692307692" />
+          <ConnectorPoint PointX="4.65625" PointY="11.835239760216343" />
+          <ConnectorPoint PointX="4.81607443490112" PointY="11.675415325315221" />
+          <ConnectorPoint PointX="5.0589255650988791" PointY="11.432564195117465" />
+          <ConnectorPoint PointX="5.2511528461538459" PointY="11.240336914062496" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

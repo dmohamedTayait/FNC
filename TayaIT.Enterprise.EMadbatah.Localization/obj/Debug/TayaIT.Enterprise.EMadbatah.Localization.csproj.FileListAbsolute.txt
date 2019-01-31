@@ -1,0 +1,20 @@
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\bin\Debug\TayaIT.Enterprise.EMadbatah.Localization.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\bin\Debug\TayaIT.Enterprise.EMadbatah.Localization.pdb
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\bin\Debug\ar\TayaIT.Enterprise.EMadbatah.Localization.resources.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\ResolveAssemblyReference.cache
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.EmadbatahRes.resources
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.EmadbatahRes.ar.resources
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\GenerateResource.read.1.tlog
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\GenerateResource.write.1.tlog
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\ar\TayaIT.Enterprise.EMadbatah.Localization.resources.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\bin\Debug\TayaIT.Enterprise.EMadbatah.Localization.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\bin\Debug\TayaIT.Enterprise.EMadbatah.Localization.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\bin\Debug\ar\TayaIT.Enterprise.EMadbatah.Localization.resources.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.EmadbatahRes.resources
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.EmadbatahRes.ar.resources
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.csproj.GenerateResource.Cache
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\ar\TayaIT.Enterprise.EMadbatah.Localization.resources.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Localization\obj\Debug\TayaIT.Enterprise.EMadbatah.Localization.pdb

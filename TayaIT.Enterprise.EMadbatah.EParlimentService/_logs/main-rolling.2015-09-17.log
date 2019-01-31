@@ -1,0 +1,68 @@
+----------------------------------------
+Timestamp: 6/25/2014 1:01:46 PM
+
+Category: TayaIT.Enterprise.EMadbatah.DAL.SessionHelper.GetSessionByID(98)  - Priority: -1 - Title:The underlying provider failed on Open.
+
+Message: <SOURCE>System.Data.Entity</SOURCE><STACKTRACE>   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__3[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at TayaIT.Enterprise.EMadbatah.DAL.SessionHelper.GetSessionDetailsByID(Int64 sessionID) in E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\SessionHelper.cs:line 333</STACKTRACE>
+<INNEREXCEPTION><INNERMESSAGE>Cannot open database "EMadbatah" requested by the login. The login failed.
+Login failed for user 'emadbatahuser'.</INNERMESSAGE><SOURCE>.Net SqlClient Data Provider</SOURCE><STACKTRACE>   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)</STACKTRACE></INNEREXCEPTION>
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2014 1:01:48 PM
+
+Category: TayaIT.Enterprise.EMadbatah.DAL.SessionContentItemHelper.GetSessionContentItemsBySessionID(98)  - Priority: -1 - Title:The underlying provider failed on Open.
+
+Message: <SOURCE>System.Data.Entity</SOURCE><STACKTRACE>   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at TayaIT.Enterprise.EMadbatah.DAL.SessionContentItemHelper.GetItemsBySessionIDGrouped(Int64 sessionID) in E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\SessionContentItemHelper.cs:line 392</STACKTRACE>
+<INNEREXCEPTION><INNERMESSAGE>Cannot open database "EMadbatah" requested by the login. The login failed.
+Login failed for user 'emadbatahuser'.</INNERMESSAGE><SOURCE>.Net SqlClient Data Provider</SOURCE><STACKTRACE>   at System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   at System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)</STACKTRACE></INNEREXCEPTION>
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2014 1:01:48 PM
+
+Category: TayaIT.Enterprise.EMadbatah.EParlimentService.EPService.IngestContentsForFinalApprove(98)  - Priority: -1 - Title:Object reference not set to an instance of an object.
+
+Message: <SOURCE>TayaIT.Enterprise.EMadbatah.EParlimentService</SOURCE><STACKTRACE>   at TayaIT.Enterprise.EMadbatah.EParlimentService.EPService.IngestContentsForFinalApprove(Int64 sessionID) in E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.EParlimentService\EPService.svc.cs:line 144</STACKTRACE>
+
+
+----------------------------------------

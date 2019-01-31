@@ -1,0 +1,9 @@
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Model\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Model\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.pdb
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Model\obj\Debug\TayaIT.Enterprise.EMadbatah.Model.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Model\obj\Debug\TayaIT.Enterprise.EMadbatah.Model.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Model\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Model\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Model\obj\Debug\TayaIT.Enterprise.EMadbatah.Model.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Model\obj\Debug\TayaIT.Enterprise.EMadbatah.Model.pdb

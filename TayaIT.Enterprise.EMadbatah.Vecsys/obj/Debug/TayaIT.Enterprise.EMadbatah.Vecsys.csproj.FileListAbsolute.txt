@@ -1,0 +1,14 @@
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Vecsys\bin\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Vecsys\bin\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.pdb
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Vecsys\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Vecsys\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.pdb
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Vecsys\obj\Debug\ResolveAssemblyReference.cache
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Vecsys\obj\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Vecsys\obj\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Vecsys\bin\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Vecsys\bin\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Vecsys\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Vecsys\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Vecsys\obj\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.csprojResolveAssemblyReference.cache
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Vecsys\obj\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Vecsys\obj\Debug\TayaIT.Enterprise.EMadbatah.Vecsys.pdb

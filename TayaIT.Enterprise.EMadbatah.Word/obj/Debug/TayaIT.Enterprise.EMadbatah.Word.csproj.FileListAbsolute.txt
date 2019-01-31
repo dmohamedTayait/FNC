@@ -1,0 +1,27 @@
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\TayaIT.Enterprise.EMadbatah.Word.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\TayaIT.Enterprise.EMadbatah.Word.pdb
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\DocumentFormat.OpenXml.Extensions.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\Word.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.pdb
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\DocumentFormat.OpenXml.Extensions.xml
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\obj\Debug\ResolveAssemblyReference.cache
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\obj\Debug\TayaIT.Enterprise.EMadbatah.Word.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.Word\obj\Debug\TayaIT.Enterprise.EMadbatah.Word.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\TayaIT.Enterprise.EMadbatah.Word.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\TayaIT.Enterprise.EMadbatah.Word.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\DocumentFormat.OpenXml.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\DocumentFormat.OpenXml.Extensions.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\Word.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\office.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\Microsoft.Office.Interop.SmartTag.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\TayaIT.Enterprise.EMadbatah.Model.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\DocumentFormat.OpenXml.xml
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\DocumentFormat.OpenXml.Extensions.xml
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\bin\Debug\office.xml
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\obj\Debug\TayaIT.Enterprise.EMadbatah.Word.csprojResolveAssemblyReference.cache
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\obj\Debug\TayaIT.Enterprise.EMadbatah.Word.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.Word\obj\Debug\TayaIT.Enterprise.EMadbatah.Word.pdb

@@ -1,0 +1,4 @@
+﻿لقد تم إعادة تخصيص الملف <%FileName%> من مراجع ملف <%OldUserName%> إلى مراجع ملف <%NewUserName%>
+<br/>
+عن طريق مدير النظام : <%AdminName%>
+<br/>

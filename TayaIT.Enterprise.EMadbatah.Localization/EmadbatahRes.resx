@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="str1" xml:space="preserve">
+    <value>الأول</value>
+  </data>
+  <data name="str10" xml:space="preserve">
+    <value>العاشر</value>
+  </data>
+  <data name="str11" xml:space="preserve">
+    <value>الحادي عشر</value>
+  </data>
+  <data name="str12" xml:space="preserve">
+    <value>الثاني عشر</value>
+  </data>
+  <data name="str13" xml:space="preserve">
+    <value>الثالث عشر</value>
+  </data>
+  <data name="str14" xml:space="preserve">
+    <value>الرابع عشر</value>
+  </data>
+  <data name="str15" xml:space="preserve">
+    <value>الخامس عشر</value>
+  </data>
+  <data name="str2" xml:space="preserve">
+    <value>الثاني</value>
+  </data>
+  <data name="str3" xml:space="preserve">
+    <value>الثالث</value>
+  </data>
+  <data name="str4" xml:space="preserve">
+    <value>الرابع</value>
+  </data>
+  <data name="str5" xml:space="preserve">
+    <value>الخامس</value>
+  </data>
+  <data name="str6" xml:space="preserve">
+    <value>السادس</value>
+  </data>
+  <data name="str7" xml:space="preserve">
+    <value>السابع</value>
+  </data>
+  <data name="str8" xml:space="preserve">
+    <value>الثامن</value>
+  </data>
+  <data name="str9" xml:space="preserve">
+    <value>التاسع</value>
+  </data>
+  <data name="strAppName" xml:space="preserve">
+    <value>تطبيق المضبطة الإلكترونية</value>
+  </data>
+  <data name="strDayFriday" xml:space="preserve">
+    <value>الجمعة</value>
+  </data>
+  <data name="strDayMonday" xml:space="preserve">
+    <value>الإثنين</value>
+  </data>
+  <data name="strDaySaturday" xml:space="preserve">
+    <value>السبت</value>
+  </data>
+  <data name="strDaySunday" xml:space="preserve">
+    <value>الأحد</value>
+  </data>
+  <data name="strDayThursday" xml:space="preserve">
+    <value>الخميس</value>
+  </data>
+  <data name="strDayTuesday" xml:space="preserve">
+    <value>الثلاثاء</value>
+  </data>
+  <data name="strDayWednesday" xml:space="preserve">
+    <value>الأربعاء</value>
+  </data>
+  <data name="strDDLSelect" xml:space="preserve">
+    <value>اختر</value>
+  </data>
+  <data name="strEmailSubjApproveSession" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- تمت الموافقة على الجلسة</value>
+  </data>
+  <data name="strEmailSubjAssignSessionFile" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  تخصيص مصحح لملف صوتي</value>
+  </data>
+  <data name="strEmailSubjAssignSessionFileReviewer" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- تخصيص مراجع ملف</value>
+  </data>
+  <data name="strEmailSubjAssignSessionRev" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  تخصيص مراجع للمضبطة</value>
+  </data>
+  <data name="strEmailSubjChangeUserRole" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- تغيير الصلاحيات الخاصة بكم</value>
+  </data>
+  <data name="strEmailSubjDeActivateUser" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- إيقاف الحساب الخاص بكم</value>
+  </data>
+  <data name="strEmailSubjDeleteUser" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- إزالة الحساب الخاص بكم من التطبيق</value>
+  </data>
+  <data name="strEmailSubjFinalApproveSession" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- تم التصديق على الجلسة</value>
+  </data>
+  <data name="strEmailSubjFinalApproveSessionFail" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  لم يتم التصديق بنجاح</value>
+  </data>
+  <data name="strEmailSubjMadbatahFileCreated" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- تم انشاء ملف المضبطه</value>
+  </data>
+  <data name="strEmailSubjMadbatahFilesCreationFailed" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- فشل انشاء ملفات المضبطه</value>
+  </data>
+  <data name="strEmailSubjNewMadbatahWordFileCreated" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  تم انشاء ملف الورد الخاص بالمضبطة</value>
+  </data>
+  <data name="strEmailSubjNewUser" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- مستخدم جديد</value>
+  </data>
+  <data name="strEmailSubjReAssignSessionFile" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  إعادة تخصيص ملف صوتي</value>
+  </data>
+  <data name="strEmailSubjReAssignSessionFileReviewer" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- إعادة  تخصيص مراجع ملف</value>
+  </data>
+  <data name="strEmailSubjReAssignSessionRev" xml:space="preserve">
+    <value>المضبطة الإلكترونية -- إعادة تخصيص مراجع</value>
+  </data>
+  <data name="strEmailSubjSessionMarkedAsComplete" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  مضبطة الجلسة مكتملة</value>
+  </data>
+  <data name="strEmailSubjUnlockSessionFile" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  فك القفل من ملف</value>
+  </data>
+  <data name="strEmailSubjUnlockSessionFileReviewer" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  فك القفل من مراجع ملف</value>
+  </data>
+  <data name="strEmailSubjUnlockSessionRev" xml:space="preserve">
+    <value>المضبطة الإلكترونية --  فك القفل من مراجع </value>
+  </data>
+  <data name="strGeneric" xml:space="preserve">
+    <value>عفوا... لقد حدت خطأ</value>
+  </data>
+  <data name="strHijMonth1" xml:space="preserve">
+    <value>محرّم</value>
+  </data>
+  <data name="strHijMonth10" xml:space="preserve">
+    <value>شوال</value>
+  </data>
+  <data name="strHijMonth11" xml:space="preserve">
+    <value>ذو القعدة</value>
+  </data>
+  <data name="strHijMonth12" xml:space="preserve">
+    <value>ذو الحجة</value>
+  </data>
+  <data name="strHijMonth2" xml:space="preserve">
+    <value>صفر</value>
+  </data>
+  <data name="strHijMonth3" xml:space="preserve">
+    <value>ربيع الأول</value>
+  </data>
+  <data name="strHijMonth4" xml:space="preserve">
+    <value>ربيع الآخر</value>
+  </data>
+  <data name="strHijMonth5" xml:space="preserve">
+    <value>جمادى الأولى</value>
+  </data>
+  <data name="strHijMonth6" xml:space="preserve">
+    <value>جمادى الآخرة</value>
+  </data>
+  <data name="strHijMonth7" xml:space="preserve">
+    <value>رجب</value>
+  </data>
+  <data name="strHijMonth8" xml:space="preserve">
+    <value>شعبان</value>
+  </data>
+  <data name="strHijMonth9" xml:space="preserve">
+    <value>رمضان</value>
+  </data>
+  <data name="strHour1" xml:space="preserve">
+    <value>الواحدة</value>
+  </data>
+  <data name="strHour10" xml:space="preserve">
+    <value>العاشرة</value>
+  </data>
+  <data name="strHour11" xml:space="preserve">
+    <value>الحادية عشر</value>
+  </data>
+  <data name="strHour12" xml:space="preserve">
+    <value>الثانية عشر</value>
+  </data>
+  <data name="strHour2" xml:space="preserve">
+    <value>الثانية</value>
+  </data>
+  <data name="strHour3" xml:space="preserve">
+    <value>الثالثة</value>
+  </data>
+  <data name="strHour4" xml:space="preserve">
+    <value>الرابعة</value>
+  </data>
+  <data name="strHour5" xml:space="preserve">
+    <value>الخامسة</value>
+  </data>
+  <data name="strHour6" xml:space="preserve">
+    <value>السادسة</value>
+  </data>
+  <data name="strHour7" xml:space="preserve">
+    <value>السابعة</value>
+  </data>
+  <data name="strHour8" xml:space="preserve">
+    <value>الثامنة</value>
+  </data>
+  <data name="strHour9" xml:space="preserve">
+    <value>التاسعة</value>
+  </data>
+  <data name="strInvalidDomain" xml:space="preserve">
+    <value>انت لست عضوا في الأكتيف ديريكتوري الخاص بالمجلس .. غير مسموح لك بالدخول إلى هذه الصفحة .. قم بالرجوع إلى مدير النظام</value>
+  </data>
+  <data name="strMadbatahStartAgendaItem" xml:space="preserve">
+    <value>افتتاح الجلسة , و كلمة معالي رئيس المجلس</value>
+  </data>
+  <data name="strMonth1" xml:space="preserve">
+    <value>يناير</value>
+  </data>
+  <data name="strMonth10" xml:space="preserve">
+    <value>أكتوبر</value>
+  </data>
+  <data name="strMonth11" xml:space="preserve">
+    <value>نوفمبر</value>
+  </data>
+  <data name="strMonth12" xml:space="preserve">
+    <value>ديسمبر</value>
+  </data>
+  <data name="strMonth2" xml:space="preserve">
+    <value>فبراير</value>
+  </data>
+  <data name="strMonth3" xml:space="preserve">
+    <value>مارس</value>
+  </data>
+  <data name="strMonth4" xml:space="preserve">
+    <value>ابريل</value>
+  </data>
+  <data name="strMonth5" xml:space="preserve">
+    <value>مايو</value>
+  </data>
+  <data name="strMonth6" xml:space="preserve">
+    <value>يونيو</value>
+  </data>
+  <data name="strMonth7" xml:space="preserve">
+    <value>يوليو</value>
+  </data>
+  <data name="strMonth8" xml:space="preserve">
+    <value>أغسطس</value>
+  </data>
+  <data name="strMonth9" xml:space="preserve">
+    <value>سبتمبر</value>
+  </data>
+  <data name="strMsgErrorEPService" xml:space="preserve">
+    <value>لقد حدث خطأ في خدمة البرلمان الإلكتروني .. من فضلك أعد المحاولة</value>
+  </data>
+  <data name="strMsgWarnNoVecsysFolder" xml:space="preserve">
+    <value>لم يستطع النظام الوصول لمجلد الجلسة .. لا تستطيع بدء مضبطة الجلسة قبل وجود المجلد</value>
+  </data>
+  <data name="strNoQueryStr" xml:space="preserve">
+    <value>لا يمكن فتح هذه الصفحه بدون مدخلات</value>
+  </data>
+  <data name="strNoSessionsExistWarn" xml:space="preserve">
+    <value>عفوا...لا يوجد اي جلسات في النظام حتي الان</value>
+  </data>
+  <data name="strRole1" xml:space="preserve">
+    <value>مدير النظام</value>
+  </data>
+  <data name="strRole2" xml:space="preserve">
+    <value>مصحح</value>
+  </data>
+  <data name="strRole3" xml:space="preserve">
+    <value>مراجع</value>
+  </data>
+  <data name="strRole4" xml:space="preserve">
+    <value>مراجع و مصحح</value>
+  </data>
+  <data name="strRole5" xml:space="preserve">
+    <value>مراجع ملف</value>
+  </data>
+  <data name="strSessionFileStatusApproved" xml:space="preserve">
+    <value>موافق عليه</value>
+  </data>
+  <data name="strSessionFileStatusCompleted" xml:space="preserve">
+    <value>تم</value>
+  </data>
+  <data name="strSessionFileStatusInProgress" xml:space="preserve">
+    <value>قيد التعديل</value>
+  </data>
+  <data name="strSessionFileStatusNew" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="strSessionStatusApproved" xml:space="preserve">
+    <value>موافق عليه</value>
+  </data>
+  <data name="strSessionStatusCompleted" xml:space="preserve">
+    <value>مكتمل</value>
+  </data>
+  <data name="strSessionStatusFinalApproved" xml:space="preserve">
+    <value>مصدق</value>
+  </data>
+  <data name="strSessionStatusInProgress" xml:space="preserve">
+    <value>قيد الإنشاء</value>
+  </data>
+  <data name="strSessionStatusNew" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="strSessionStillWithNoWork" xml:space="preserve">
+    <value>عفوا... لم يتم بدأ العمل في المضبطه بعد</value>
+  </data>
+  <data name="strSignInAsDifferentUserWarning" xml:space="preserve">
+    <value>لتغيير المستخدم الحالي قم بالضغط على رابط الدخول بحساب مختلف و للخروج نهائياً يجب اختيار خروج و إغلاق نافذة المتصفح</value>
+  </data>
+  <data name="strSignOutWarning" xml:space="preserve">
+    <value>لإتمام عملية الخروج بشكل صحيح يجب غلق نافذة المتصفح</value>
+  </data>
+  <data name="strTimeAM" xml:space="preserve">
+    <value>صباحا</value>
+  </data>
+  <data name="strTimePM" xml:space="preserve">
+    <value>مساءا</value>
+  </data>
+  <data name="strUnauthorized" xml:space="preserve">
+    <value>عفوا... غير مسموح لك بالدخول إلى هذه الصفحة .. قم بالرجوع إلى مدير النظام</value>
+  </data>
+  <data name="strUserinActive" xml:space="preserve">
+    <value>عفوا... غير مسموح لك بالدخول إلى هذه الصفحة .. لم يتم تفعيل حسابك بعد .. قم بالرجوع إلى مدير النظام</value>
+  </data>
+  <data name="strWrongReviewer" xml:space="preserve">
+    <value>غير مسموح لك بعمل مراجعة لهذه الصفحة</value>
+  </data>
+  <data name="strFileCanBeTaken" xml:space="preserve">
+    <value>يوجد ملف يمكنك مراجعته </value>
+  </data>
+  <data name="strFilesCanBeTaken" xml:space="preserve">
+    <value>يوجد ملفات يمكنك مراجعتها </value>
+  </data>
+  <data name="strNoFreeFilesFound" xml:space="preserve">
+    <value>لا يمكنك عمل مراجعة لأي ملف في المضبطة .. جميع الملفات مخصصة لمراجعين آخرين</value>
+  </data>
+  <data name="str16" xml:space="preserve">
+    <value>السادس عشر</value>
+  </data>
+  <data name="str17" xml:space="preserve">
+    <value>السابع عشر</value>
+  </data>
+  <data name="str18" xml:space="preserve">
+    <value>الثامن عشر</value>
+  </data>
+  <data name="str19" xml:space="preserve">
+    <value>التاسع عشر</value>
+  </data>
+  <data name="str20" xml:space="preserve">
+    <value>العشرون</value>
+  </data>
+  <data name="str21" xml:space="preserve">
+    <value>الحادي والعشرون</value>
+  </data>
+  <data name="str22" xml:space="preserve">
+    <value>الثاني والعشرون</value>
+  </data>
+  <data name="str23" xml:space="preserve">
+    <value>الثالث والعشرون</value>
+  </data>
+  <data name="str24" xml:space="preserve">
+    <value>الرابع والعشرون</value>
+  </data>
+  <data name="str25" xml:space="preserve">
+    <value>الخامس والعشرون</value>
+  </data>
+  <data name="str26" xml:space="preserve">
+    <value>السادس والعشرون</value>
+  </data>
+  <data name="str27" xml:space="preserve">
+    <value>السابع والعشرون</value>
+  </data>
+  <data name="str28" xml:space="preserve">
+    <value>الثامن والعشرون</value>
+  </data>
+  <data name="str29" xml:space="preserve">
+    <value>التاسع والعشرون</value>
+  </data>
+  <data name="str30" xml:space="preserve">
+    <value>الثلاثون</value>
+  </data>
+  <data name="str31" xml:space="preserve">
+    <value>الحادي والثلاثون</value>
+  </data>
+  <data name="str32" xml:space="preserve">
+    <value>الثاني والثلاثون</value>
+  </data>
+  <data name="str33" xml:space="preserve">
+    <value>الثالث والثلاثون</value>
+  </data>
+  <data name="str34" xml:space="preserve">
+    <value>الرابع والثلاثون</value>
+  </data>
+  <data name="str35" xml:space="preserve">
+    <value>الخامس والثلاثون</value>
+  </data>
+  <data name="str36" xml:space="preserve">
+    <value>السادس والثلاثون</value>
+  </data>
+  <data name="str37" xml:space="preserve">
+    <value>السابع والثلاثون</value>
+  </data>
+  <data name="str38" xml:space="preserve">
+    <value>الثامن والثلاثون</value>
+  </data>
+  <data name="str39" xml:space="preserve">
+    <value>التاسع والثلاثون</value>
+  </data>
+  <data name="str40" xml:space="preserve">
+    <value>الاربعون</value>
+  </data>
+</root>

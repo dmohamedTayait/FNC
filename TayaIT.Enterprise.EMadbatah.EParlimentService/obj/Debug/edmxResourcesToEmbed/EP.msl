@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FNCDBModelStoreContainer" CdmEntityContainer="FNCDBEntities">
+    <EntitySetMapping Name="SessionDiaries">
+      <EntityTypeMapping TypeName="FNCDBModel.SessionDiary">
+        <MappingFragment StoreEntitySet="SessionDiaries">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="DiaryDate" ColumnName="DiaryDate" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="DiaryNumber" ColumnName="DiaryNumber" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="CreatorID" ColumnName="CreatorID" />
+          <ScalarProperty Name="MainItemID" ColumnName="MainItemID" />
+          <ScalarProperty Name="SubItemID" ColumnName="SubItemID" />
+          <ScalarProperty Name="InterventionOwnerID" ColumnName="InterventionOwnerID" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

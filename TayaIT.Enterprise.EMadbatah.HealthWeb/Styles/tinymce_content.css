@@ -1,0 +1,22 @@
+/* global */
+body{
+	font-size:13pt;
+	padding:10px;
+	line-height:20pt;
+	text-align:right;
+	direction:rtl;
+}
+/* span */
+.highlight{
+	background-color:#dfe6f9;
+	cursor:pointer;
+}
+.hover{
+	background-color:#b6cef2;
+	cursor:pointer;
+}
+.editable{
+	background-color:#437ec4 !important;
+	cursor:text !important;
+	color:#FFF;
+}

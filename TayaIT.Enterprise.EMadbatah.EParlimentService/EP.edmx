@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FNCDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="FNCDBModelStoreContainer">
+          <EntitySet Name="SessionDiaries" EntityType="FNCDBModel.Store.SessionDiaries" store:Type="Tables" Schema="dbo" />
+          </EntityContainer>
+        <EntityType Name="SessionDiaries">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UpdatedBy" Type="int" />
+          <Property Name="UpdatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="DiaryDate" Type="datetime" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+          <Property Name="DiaryNumber" Type="int" />
+          <Property Name="Subject" Type="nvarchar(max)" />
+          <Property Name="Text" Type="nvarchar(max)" />
+          <Property Name="CreatorID" Type="int" />
+          <Property Name="MainItemID" Type="int" />
+          <Property Name="SubItemID" Type="int" />
+          <Property Name="InterventionOwnerID" Type="int" />
+          <Property Name="SessionID" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'FNCDB.dbo._WS_SessionsAgendaItemsVW' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'FNCDB.dbo._WS_SessionsEnitiesVW' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'FNCDB.dbo._WS_SessionsVW' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FNCDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="FNCDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SessionDiaries" EntityType="FNCDBModel.SessionDiary" />
+        </EntityContainer>
+        <EntityType Name="SessionDiary">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UpdatedBy" Type="Int32" />
+          <Property Name="UpdatedDate" Type="DateTime" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="DiaryDate" Type="DateTime" />
+          <Property Name="StartTime" Type="DateTime" />
+          <Property Name="EndTime" Type="DateTime" />
+          <Property Name="DiaryNumber" Type="Int32" />
+          <Property Name="Subject" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Text" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="CreatorID" Type="Int32" />
+          <Property Name="MainItemID" Type="Int32" />
+          <Property Name="SubItemID" Type="Int32" />
+          <Property Name="InterventionOwnerID" Type="Int32" />
+          <Property Name="SessionID" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FNCDBModelStoreContainer" CdmEntityContainer="FNCDBEntities">
+          <EntitySetMapping Name="SessionDiaries"><EntityTypeMapping TypeName="FNCDBModel.SessionDiary"><MappingFragment StoreEntitySet="SessionDiaries">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+            <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+            <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="DiaryDate" ColumnName="DiaryDate" />
+            <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+            <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+            <ScalarProperty Name="DiaryNumber" ColumnName="DiaryNumber" />
+            <ScalarProperty Name="Subject" ColumnName="Subject" />
+            <ScalarProperty Name="Text" ColumnName="Text" />
+            <ScalarProperty Name="CreatorID" ColumnName="CreatorID" />
+            <ScalarProperty Name="MainItemID" ColumnName="MainItemID" />
+            <ScalarProperty Name="SubItemID" ColumnName="SubItemID" />
+            <ScalarProperty Name="InterventionOwnerID" ColumnName="InterventionOwnerID" />
+            <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="EP">
+        <EntityTypeShape EntityType="FNCDBModel.SessionDiary" Width="1.5" PointX="0.75" PointY="0.75" Height="3.5644742838541665" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

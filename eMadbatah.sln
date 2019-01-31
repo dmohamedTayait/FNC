@@ -1,0 +1,229 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "commondlls", "commondlls", "{6F0757EA-D608-4F50-924F-0501655C82E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes", "notes", "{5625AE9A-8EB5-4D30-B6C6-EF126B255786}"
+EndProject
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "TayaIT.Enterprise.EMadbatah.DB", "TayaIT.Enterprise.EMadbatah.DB\TayaIT.Enterprise.EMadbatah.DB.dbproj", "{67CBC824-A49E-4E9B-A947-360F3DFE65C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BullzipInstallation", "BullzipInstallation", "{2939CB60-2DC7-4D2D-9B64-23073E88463E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TayaIT.Enterprise.EMadbatah.Web", "TayaIT.Enterprise.EMadbatah.Web\", "{2D087254-447F-4E23-8554-BAA34AAF0AAA}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{30DA8156-2BF3-43C9-86A9-FB0EFA1D92EA}|TayaIT.Enterprise.EMadbatah.Config.dll;{FBC69697-B34A-4897-8F2A-D325C05EA455}|TayaIT.Enterprise.EMadbatah.Model.dll;{84D21054-E26E-44BB-90F4-1E6CA5C37250}|TayaIT.Enterprise.EMadbatah.Util.Web.dll;{B8761FA3-681C-46FB-AEEE-95BD530D735E}|TayaIT.Enterprise.EMadbatah.Web.Framework.dll;{700D6C59-7736-4A04-A562-CB6EACFFE303}|TayaIT.Enterprise.EMadbatah.Vecsys.dll;{B98BAAAD-3F4A-4260-AB73-ED574924D28A}|TayaIT.Enterprise.EMadbatah.BLL.dll;{B0FCFCD0-9BF1-43F7-A98E-D4EE14E3A891}|TayaIT.Enterprise.EMadbatah.DAL.dll;{90DC80E1-81C7-4DFE-857C-C3E12EA3CA6C}|TayaIT.Enterprise.EMadbatah.Localization.dll;{E1F269D8-A18C-424C-822D-E5AEDA59CF78}|TayaIT.Enterprise.EMadbatah.Pdf2Word.dll;{3109DCF8-95E9-44CD-A4A8-CD395D7D7E9A}|TayaIT.Enterprise.EMadbatah.OpenXml.Word.dll;{E25BAAA5-5532-4F14-9422-E03F40CBEEB4}|TayaIT.Enterprise.EMadbatah.Word.dll;{EF700F30-C9BB-49A6-912C-E3B77857B514}|HtmlToOpenXml.dll;{D512000F-449B-497F-8023-D48DB046AC27}|TayaIT.Enterprise.EMadbatah.Util.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TayaIT.Enterprise.EMadbatah.Web"
+		Debug.AspNetCompiler.PhysicalPath = "TayaIT.Enterprise.EMadbatah.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TayaIT.Enterprise.EMadbatah.Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TayaIT.Enterprise.EMadbatah.Web"
+		Release.AspNetCompiler.PhysicalPath = "TayaIT.Enterprise.EMadbatah.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TayaIT.Enterprise.EMadbatah.Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "11000"
+		VWDDynamicPort = "false"
+		VWDVirtualPath = "/"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "commondlls (2)", "commondlls (2)", "{F9A2305E-4414-47BA-AA5C-9CF9159F2491}"
+	ProjectSection(SolutionItems) = preProject
+		commondlls\Bullzip.PDFWriter.dll = commondlls\Bullzip.PDFWriter.dll
+		commondlls\Bullzip.PdfWriter.Lib.dll = commondlls\Bullzip.PdfWriter.Lib.dll
+		commondlls\DocumentFormat.OpenXml.dll = commondlls\DocumentFormat.OpenXml.dll
+		commondlls\DocumentFormat.OpenXml.Extensions.dll = commondlls\DocumentFormat.OpenXml.Extensions.dll
+		commondlls\DocumentFormat.OpenXml.Extensions.XML = commondlls\DocumentFormat.OpenXml.Extensions.XML
+		commondlls\DocumentFormat.OpenXml.xml = commondlls\DocumentFormat.OpenXml.xml
+		commondlls\gsdll32.dll = commondlls\gsdll32.dll
+		commondlls\gsdll64.dll = commondlls\gsdll64.dll
+		commondlls\ICSharpCode.SharpZipLib.dll = commondlls\ICSharpCode.SharpZipLib.dll
+		commondlls\itextsharp.dll = commondlls\itextsharp.dll
+		commondlls\itextsharp.xtra.dll = commondlls\itextsharp.xtra.dll
+		commondlls\Microsoft.Practices.EnterpriseLibrary.Common.dll = commondlls\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		commondlls\Microsoft.Practices.EnterpriseLibrary.Common.xml = commondlls\Microsoft.Practices.EnterpriseLibrary.Common.xml
+		commondlls\Microsoft.Practices.EnterpriseLibrary.Data.dll = commondlls\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		commondlls\Microsoft.Practices.EnterpriseLibrary.Data.xml = commondlls\Microsoft.Practices.EnterpriseLibrary.Data.xml
+		commondlls\Microsoft.Practices.EnterpriseLibrary.Logging.dll = commondlls\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+		commondlls\Microsoft.Practices.EnterpriseLibrary.Logging.xml = commondlls\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+		commondlls\Microsoft.Practices.ServiceLocation.dll = commondlls\Microsoft.Practices.ServiceLocation.dll
+		commondlls\Microsoft.Practices.Unity.Configuration.dll = commondlls\Microsoft.Practices.Unity.Configuration.dll
+		commondlls\Microsoft.Practices.Unity.dll = commondlls\Microsoft.Practices.Unity.dll
+		commondlls\Microsoft.Practices.Unity.Interception.Configuration.dll = commondlls\Microsoft.Practices.Unity.Interception.Configuration.dll
+		commondlls\Microsoft.Practices.Unity.Interception.dll = commondlls\Microsoft.Practices.Unity.Interception.dll
+		commondlls\OpenXmlPowerTools.dll = commondlls\OpenXmlPowerTools.dll
+		commondlls\OpenXmlPowerTools.dll-Help.xml = commondlls\OpenXmlPowerTools.dll-Help.xml
+		commondlls\OpenXmlPowerTools.pdb = commondlls\OpenXmlPowerTools.pdb
+		commondlls\TagLibSharp.dll = commondlls\TagLibSharp.dll
+		commondlls\Word.dll = commondlls\Word.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "notes (2)", "notes (2)", "{DB838DCF-52F7-4FF6-A141-EB1F7DB767C2}"
+	ProjectSection(SolutionItems) = preProject
+		notes\config.txt = notes\config.txt
+		notes\create-madbatah-db.sql = notes\create-madbatah-db.sql
+		notes\FNC Deplyment Guide.docx = notes\FNC Deplyment Guide.docx
+		notes\FNC Deplyment Guide_IIS6.docx = notes\FNC Deplyment Guide_IIS6.docx
+		notes\logging.txt = notes\logging.txt
+		notes\releases.txt = notes\releases.txt
+		notes\security.txt = notes\security.txt
+		notes\Single Sign On(SSO).docx = notes\Single Sign On(SSO).docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BullzipInstallation", "BullzipInstallation", "{0F6C052D-B21F-40A8-B99E-9D4BE5AF595B}"
+	ProjectSection(SolutionItems) = preProject
+		notes\BullzipInstallation\global.ini = notes\BullzipInstallation\global.ini
+		notes\BullzipInstallation\prepare.bat = notes\BullzipInstallation\prepare.bat
+		notes\BullzipInstallation\PrintUsingWinWord.txt = notes\BullzipInstallation\PrintUsingWinWord.txt
+		notes\BullzipInstallation\readme.txt = notes\BullzipInstallation\readme.txt
+		notes\BullzipInstallation\shared printer.reg = notes\BullzipInstallation\shared printer.reg
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TayaIT.Enterprise.EMadbatah.HealthWeb", "TayaIT.Enterprise.EMadbatah.HealthWeb\", "{25EC2391-53DB-4FB2-A047-49D6B7205191}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{30DA8156-2BF3-43C9-86A9-FB0EFA1D92EA}|TayaIT.Enterprise.EMadbatah.Config.dll;{FBC69697-B34A-4897-8F2A-D325C05EA455}|TayaIT.Enterprise.EMadbatah.Model.dll;{D512000F-449B-497F-8023-D48DB046AC27}|TayaIT.Enterprise.EMadbatah.Util.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TayaIT.Enterprise.EMadbatah.HealthWeb"
+		Debug.AspNetCompiler.PhysicalPath = "TayaIT.Enterprise.EMadbatah.HealthWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TayaIT.Enterprise.EMadbatah.HealthWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TayaIT.Enterprise.EMadbatah.HealthWeb"
+		Release.AspNetCompiler.PhysicalPath = "TayaIT.Enterprise.EMadbatah.HealthWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TayaIT.Enterprise.EMadbatah.HealthWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "15000"
+		VWDDynamicPort = "false"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{BBBF20C6-FAEE-4396-8769-A1829D3975C6} = {BBBF20C6-FAEE-4396-8769-A1829D3975C6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.BLL", "TayaIT.Enterprise.EMadbatah.BLL\TayaIT.Enterprise.EMadbatah.BLL.csproj", "{B98BAAAD-3F4A-4260-AB73-ED574924D28A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Config", "TayaIT.Enterprise.EMadbatah.Config\TayaIT.Enterprise.EMadbatah.Config.csproj", "{30DA8156-2BF3-43C9-86A9-FB0EFA1D92EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.DAL", "TayaIT.Enterprise.EMadbatah.DAL\TayaIT.Enterprise.EMadbatah.DAL.csproj", "{B0FCFCD0-9BF1-43F7-A98E-D4EE14E3A891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.EParlimentService", "TayaIT.Enterprise.EMadbatah.EParlimentService\TayaIT.Enterprise.EMadbatah.EParlimentService.csproj", "{BBBF20C6-FAEE-4396-8769-A1829D3975C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Localization", "TayaIT.Enterprise.EMadbatah.Localization\TayaIT.Enterprise.EMadbatah.Localization.csproj", "{90DC80E1-81C7-4DFE-857C-C3E12EA3CA6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Model", "TayaIT.Enterprise.EMadbatah.Model\TayaIT.Enterprise.EMadbatah.Model.csproj", "{FBC69697-B34A-4897-8F2A-D325C05EA455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.OpenXml.Word", "TayaIT.Enterprise.EMadbatah.OpenXml.Word\TayaIT.Enterprise.EMadbatah.OpenXml.Word.csproj", "{3109DCF8-95E9-44CD-A4A8-CD395D7D7E9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Pdf2Word", "TayaIT.Enterprise.EMadbatah.Pdf2Word\TayaIT.Enterprise.EMadbatah.Pdf2Word.csproj", "{E1F269D8-A18C-424C-822D-E5AEDA59CF78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Util", "TayaIT.Enterprise.EMadbatah.Util\TayaIT.Enterprise.EMadbatah.Util.csproj", "{D512000F-449B-497F-8023-D48DB046AC27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Util.Web", "TayaIT.Enterprise.EMadbatah.Util.Web\TayaIT.Enterprise.EMadbatah.Util.Web.csproj", "{84D21054-E26E-44BB-90F4-1E6CA5C37250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Vecsys", "TayaIT.Enterprise.EMadbatah.Vecsys\TayaIT.Enterprise.EMadbatah.Vecsys.csproj", "{700D6C59-7736-4A04-A562-CB6EACFFE303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Web.Framework", "TayaIT.Enterprise.EMadbatah.Web.Framework\TayaIT.Enterprise.EMadbatah.Web.Framework.csproj", "{B8761FA3-681C-46FB-AEEE-95BD530D735E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TayaIT.Enterprise.EMadbatah.Word", "TayaIT.Enterprise.EMadbatah.Word\TayaIT.Enterprise.EMadbatah.Word.csproj", "{E25BAAA5-5532-4F14-9422-E03F40CBEEB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlToOpenXml", "HtmlToOpenXml\HtmlToOpenXml.csproj", "{EF700F30-C9BB-49A6-912C-E3B77857B514}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2D087254-447F-4E23-8554-BAA34AAF0AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D087254-447F-4E23-8554-BAA34AAF0AAA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{25EC2391-53DB-4FB2-A047-49D6B7205191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25EC2391-53DB-4FB2-A047-49D6B7205191}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98BAAAD-3F4A-4260-AB73-ED574924D28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98BAAAD-3F4A-4260-AB73-ED574924D28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98BAAAD-3F4A-4260-AB73-ED574924D28A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98BAAAD-3F4A-4260-AB73-ED574924D28A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30DA8156-2BF3-43C9-86A9-FB0EFA1D92EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30DA8156-2BF3-43C9-86A9-FB0EFA1D92EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30DA8156-2BF3-43C9-86A9-FB0EFA1D92EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30DA8156-2BF3-43C9-86A9-FB0EFA1D92EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FCFCD0-9BF1-43F7-A98E-D4EE14E3A891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FCFCD0-9BF1-43F7-A98E-D4EE14E3A891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FCFCD0-9BF1-43F7-A98E-D4EE14E3A891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FCFCD0-9BF1-43F7-A98E-D4EE14E3A891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBF20C6-FAEE-4396-8769-A1829D3975C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBF20C6-FAEE-4396-8769-A1829D3975C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBF20C6-FAEE-4396-8769-A1829D3975C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBF20C6-FAEE-4396-8769-A1829D3975C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DC80E1-81C7-4DFE-857C-C3E12EA3CA6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DC80E1-81C7-4DFE-857C-C3E12EA3CA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DC80E1-81C7-4DFE-857C-C3E12EA3CA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DC80E1-81C7-4DFE-857C-C3E12EA3CA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC69697-B34A-4897-8F2A-D325C05EA455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC69697-B34A-4897-8F2A-D325C05EA455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC69697-B34A-4897-8F2A-D325C05EA455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC69697-B34A-4897-8F2A-D325C05EA455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3109DCF8-95E9-44CD-A4A8-CD395D7D7E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3109DCF8-95E9-44CD-A4A8-CD395D7D7E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3109DCF8-95E9-44CD-A4A8-CD395D7D7E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3109DCF8-95E9-44CD-A4A8-CD395D7D7E9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F269D8-A18C-424C-822D-E5AEDA59CF78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F269D8-A18C-424C-822D-E5AEDA59CF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F269D8-A18C-424C-822D-E5AEDA59CF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F269D8-A18C-424C-822D-E5AEDA59CF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D512000F-449B-497F-8023-D48DB046AC27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D512000F-449B-497F-8023-D48DB046AC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D512000F-449B-497F-8023-D48DB046AC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D512000F-449B-497F-8023-D48DB046AC27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D21054-E26E-44BB-90F4-1E6CA5C37250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D21054-E26E-44BB-90F4-1E6CA5C37250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D21054-E26E-44BB-90F4-1E6CA5C37250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D21054-E26E-44BB-90F4-1E6CA5C37250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700D6C59-7736-4A04-A562-CB6EACFFE303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700D6C59-7736-4A04-A562-CB6EACFFE303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700D6C59-7736-4A04-A562-CB6EACFFE303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700D6C59-7736-4A04-A562-CB6EACFFE303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8761FA3-681C-46FB-AEEE-95BD530D735E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8761FA3-681C-46FB-AEEE-95BD530D735E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8761FA3-681C-46FB-AEEE-95BD530D735E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8761FA3-681C-46FB-AEEE-95BD530D735E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E25BAAA5-5532-4F14-9422-E03F40CBEEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25BAAA5-5532-4F14-9422-E03F40CBEEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25BAAA5-5532-4F14-9422-E03F40CBEEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25BAAA5-5532-4F14-9422-E03F40CBEEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF700F30-C9BB-49A6-912C-E3B77857B514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF700F30-C9BB-49A6-912C-E3B77857B514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF700F30-C9BB-49A6-912C-E3B77857B514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF700F30-C9BB-49A6-912C-E3B77857B514}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2939CB60-2DC7-4D2D-9B64-23073E88463E} = {5625AE9A-8EB5-4D30-B6C6-EF126B255786}
+	EndGlobalSection
+EndGlobal

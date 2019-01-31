@@ -1,0 +1,215 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using TayaIT.Enterprise.EMadbatah.Vecsys;
+using TayaIT.Enterprise.EMadbatah.Model;
+using TayaIT.Enterprise.EMadbatah.Word;
+using System.IO;
+using TayaIT.Enterprise.EMadbatah.BLL;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using TayaIT.Enterprise.EMadbatah.Localization;
+using TayaIT.Enterprise.EMadbatah.DAL;
+using System.Collections;
+using TayaIT.Enterprise.EMadbatah.Web;
+public partial class Tester : BasePage
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        
+        //TayaIT.Enterprise.EMadbatah.DAL.Attachement att  =  TayaIT.Enterprise.EMadbatah.DAL.AttachmentHelper.GetAttachementByID(1);
+        //System.IO.File.WriteAllBytes("E:\\myfile.pdf", att.FileContent);
+
+       //VecSysSessionFile sessionFile =
+       //    Parser.ParseTransXml(@"f:\session_22-06-2010_2.trans.xml");
+
+       //List<VecSysParagraph> paragraphs = Parser.combineSegments(sessionFile.SpeechSegmentList);
+        //DocumentSharp2Word doc = new DocumentSharp2Word();
+        //DateTime curTime = DateTime.Now;
+        //TayaIT.Enterprise.EMadbatah.Util.Dates dates = new TayaIT.Enterprise.EMadbatah.Util.Dates();
+        //string date = dates.FormatGreg(curTime.ToString("yyyy/MM/dd"), "yyyy/MM/dd");
+
+        //string res = setFormatAtrrInSpan(File.ReadAllText(@"E:\FNC\sessionContentItem_sample.txt"));
+
+        int sessionID = 1;
+        string folderPath = Server.MapPath("~") + @"\Files\" + sessionID + @"\";
+        if (!Directory.Exists(folderPath))
+            Directory.CreateDirectory(folderPath);
+
+        TayaIT.Enterprise.EMadbatah.Model.SessionDetails details = SessionStartFacade.GetSessionDetails(sessionID);
+        if (details.Status == TayaIT.Enterprise.EMadbatah.Model.SessionStatus.Approved)
+        {
+            TayaIT.Enterprise.EMadbatah.DAL.SessionStart start = SessionStartFacade.GetSessionStartBySessionID(sessionID);
+            if (start != null)
+            {
+                if (MabatahCreatorFacade.CreateMadbatah(sessionID, folderPath))
+                {
+                    string wordFilePath = folderPath + sessionID + ".doc";
+                    byte[] wordDoc = File.ReadAllBytes(wordFilePath);
+                    WordConverter.ConvertDocument(wordFilePath, wordFilePath.Replace(".doc", ".pdf"), TargetFormat.Pdf);
+                    byte[] pdfDoc = File.ReadAllBytes(wordFilePath.Replace(".doc", ".pdf"));
+                    Hashtable emailData = new Hashtable();
+                    if (SessionHelper.UpdateSessionWordAndPdfFiles(sessionID, wordDoc, pdfDoc) > 0)
+                    {
+
+                        string sessionName = EMadbatahFacade.GetSessionName(details.Season, details.Stage, details.Serial);
+
+                        emailData.Add("<%SessionName%>", sessionName);
+                        emailData.Add("<%SessionDate%>", details.Date.ToShortDateString());
+                        emailData.Add("<%RevName%>", CurrentUser.Name);
+                        MailManager.SendMail(new Email(new Emailreceptionist(CurrentUser.Email, CurrentUser.Name)), SystemMailType.MadbatahFileCreated, emailData);
+                    }
+                    else
+                    {
+                        // show error happend while adding madbatah word and pdf to database
+                    }
+                }
+                else
+                {
+                    //show error something went wrong when creating the Madbatah Word/pdf
+                }
+            }
+            else
+            {
+                //show warning session start not completed yet
+            }
+        }
+        else
+        {
+            //show warninig session start not approved yet
+        }
+        
+        
+               
+
+       
+
+        /*
+        BasicFormat format = new BasicFormat();
+        WordDocument doc = new WordDocument();
+        //doc.Open(@"E:\FNC\wordTOhtml.html");
+
+        //doc.ReplaceWithPageBreak("mcenoneditable");
+        //doc.InsertPageNumInFooterWithSessionNum("4/13/4");
+        //doc.SaveDocument(@"E:\wordTOhtml.doc");
+        //doc.Quit();
+        
+        doc.CreateNew();
+        
+        format.align = Alignment.Center;
+        format.textStyle = TextStyle.Bold;
+        doc.insertText("العنوان", 16,format,FontColor.Blue,TextFont.Arial );
+        doc.insertBreakLine(1);
+
+        doc.InsertHeading("عنوان رئيسي", HeadingLevel.Heading2);
+        doc.insertBreakLine(1);
+
+
+        format.align = Alignment.Right;
+        format.textStyle = TextStyle.Italic;
+        doc.insertText("كان القائد العسكري المنتصر المغوار خالد بن الوليد", 14, format, FontColor.Black, TextFont.Arial);
+        doc.insertBreakLine(1);
+
+        format.align = Alignment.Right;
+        format.textStyle = TextStyle.Normal;
+        doc.insertText("فرحيل مبارك لم يعن بالنسبة للجماهير الثائرة تحقيق مطلب الثورة الرئيسي وهو الشعب يريد اسقاط النظام", 14, format, FontColor.Green, TextFont.TimesNewRoman);
+        doc.insertBreakLine(1);
+
+        doc.insertHeader("تذييل للصفحه من فوق");
+        //doc.inserFooter("تذييل للصفحه");
+
+
+        //doc.insertPageNumInFooter();
+
+        doc.InsertPageNumInFooterWithSessionNum("20/4/14");
+        doc.AddFooteNote( "هامش جانبي");
+
+        doc.AddBulletList(new List<string> { "عنصر 1", "عنصر 2", "عنصر 3" }, TextFont.Arial,  format);
+
+        doc.InsertHyperLink("http://www.msn.com");
+        doc.insertBreakLine(1);
+
+        format.align = Alignment.Right;
+        format.textStyle = TextStyle.Italic;
+        doc.insertText("فرحيل مبارك لم يعن بالنسبةis it possible to convert this document to pdf using iTextSharp. الرئيسي وهو الشعب يريد اسقاط النظام", 18, format, FontColor.Green, TextFont.Arial);
+        doc.insertBreakLine(1);
+
+        doc.AddNumberList(new List<string> { "عنصر 1", "عنصر 2", "عنصر 3" }, TextFont.Arial, format);
+        int num = doc.GetCurrentPageNumber();
+
+        doc.insertBreakLine(10);
+
+        num = doc.GetCurrentPageNumber();
+        doc.SaveDocument(@"f:\out.doc");
+        doc.Quit();
+        */
+        //WordConverter.ConvertDocument(@"f:\out.doc", @"f:\out.pdf", TargetFormat.Pdf);
+        
+        //WordMerger.Merge(new string[] { @"f:\TayaSearchSolution-Plan.doc", @"f:\out.doc" }, @"f:\merged.doc", true);
+        
+        ////doc.test();
+        //doc.setDocumentProperties("e-madbatah", "test doc", "subject");
+        //string text = "";
+       
+        /*
+        
+        format.align = Alignment.Center;
+        format.textStyle = TextStyle.Italic;
+        doc.insertHeading("Heading 1", HeadingLevel.Heading1, format);
+        doc.insertBreakLine(1);
+ 
+        format.align = Alignment.Left;
+        format.textStyle = TextStyle.Italic;
+
+        font = TextFont.TimesNewRoman;
+        doc.insertParagraphPeice("paragraph 1 text", 20, format, System.Drawing.Color.Blue, font);
+        doc.insertBreakLine(1);
+
+        format.align = Alignment.Left;
+        format.textStyle = TextStyle.Italic;
+        font = TextFont.Arial;
+        text = "The conference will be sponsored by the Institute for Systems and Technologies of Information, Control and Communication (INSTICC) and held in cooperation with the Portuguese Association for Artificial Intelligence (APPIA)";
+        doc.insertParagraphPeice(text, 14, format, System.Drawing.Color.Black, font);
+        doc.insertBreakLine(1);
+        */
+       // format.align = Alignment.Right;
+       // format.textStyle = TextStyle.Normal;
+       // font = TextFont.Arial;
+       // //text = ReverseWords("كان القائد العسكري المنتصر المغوار خالد بن الوليد");
+        
+       // //text = File.ReadAllText(@"F:\SampleText.txt");
+       // text = "{RTL}كان القائد العسكري المنتصر المغوار خالد بن الوليد";
+       // doc.insertParagraphPeice(text, 14, format, System.Drawing.Color.Black, font);
+       // doc.insertBreakLine(1);
+
+       // /*
+       // format.align = Alignment.Left;
+       // format.textStyle = TextStyle.Bold;
+       // doc.insertHeading("Heading 2:", HeadingLevel.Heading2, format);
+       // doc.insertBreakLine(1);
+
+       //*/
+       // doc.insertBreakLine(1);
+       // doc.saveDocument(@"f:\out.doc");
+
+    }
+    
+    public string Reverse(string s)
+    {
+        char[] charArray = s.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
+    }
+    /// <summary>
+    /// Receive string of words and return them in the reversed order.
+    /// </summary>
+    public string ReverseWords(string sentence)
+    {
+        string[] words = sentence.Split(' ');
+        Array.Reverse(words);
+        return string.Join(" ", words);
+    }
+}

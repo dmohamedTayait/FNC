@@ -1,0 +1,18 @@
+AD Single Signo On(SSO):
+
+For each user In IE:
+setting that you can set so that IE
+Go to tools > internet options > security
+in "security settings" select the option Automatic Logon with current username and password or Automatic Logon only in intranet Zone 
+
+You have to make sure that the site you are trying to use is added in the intranet zone.
+
+if user is using FF:
+1) Open Firefox and type “about:config” in the address bar. (without the quotes of course)
+2) In the ‘Filter’ field type the following “network.automatic-ntlm-auth.trusted-uris”
+3) Double click the name of the preference that we just searched for
+4) Enter the URLs of the sites you wish to pass NTLM auth info to in the form of:
+
+    http://intranet.company.com,http://email.company.lan
+
+5) Notice that you can use a comma separated list in this field.

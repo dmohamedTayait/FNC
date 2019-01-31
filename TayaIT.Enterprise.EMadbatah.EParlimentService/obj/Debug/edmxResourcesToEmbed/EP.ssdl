@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FNCDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="FNCDBModelStoreContainer">
+    <EntitySet Name="SessionDiaries" EntityType="FNCDBModel.Store.SessionDiaries" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="SessionDiaries">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="UpdatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="DiaryDate" Type="datetime" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+    <Property Name="DiaryNumber" Type="int" />
+    <Property Name="Subject" Type="nvarchar(max)" />
+    <Property Name="Text" Type="nvarchar(max)" />
+    <Property Name="CreatorID" Type="int" />
+    <Property Name="MainItemID" Type="int" />
+    <Property Name="SubItemID" Type="int" />
+    <Property Name="InterventionOwnerID" Type="int" />
+    <Property Name="SessionID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'FNCDB.dbo._WS_SessionsAgendaItemsVW' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'FNCDB.dbo._WS_SessionsEnitiesVW' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'FNCDB.dbo._WS_SessionsVW' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+</Schema>

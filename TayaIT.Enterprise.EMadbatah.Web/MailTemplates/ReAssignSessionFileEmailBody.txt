@@ -1,0 +1,4 @@
+﻿لقد تم إعادة تخصيص الملف <%FileName%> من المستخدم <%OldUserName%> إلى المستخدم <%NewUserName%>
+<br/>
+عن طريق مدير النظام : <%AdminName%>
+<br/>

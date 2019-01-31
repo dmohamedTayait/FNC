@@ -1,0 +1,34 @@
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.DAL.dll.config
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.DAL.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.DAL.pdb
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.Util.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TagLibSharp.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.Util.pdb
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\obj\Debug\TayaIT.Enterprise.EMadbatah.DAL.dll
+E:\Madbatah_\eMadbatah\trunk\TayaIT.Enterprise.EMadbatah.DAL\obj\Debug\TayaIT.Enterprise.EMadbatah.DAL.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.DAL.dll.config
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.DAL.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.DAL.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.Util.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TagLibSharp.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\TayaIT.Enterprise.EMadbatah.Util.pdb
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\obj\Debug\TayaIT.Enterprise.EMadbatah.DAL.csprojResolveAssemblyReference.cache
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\obj\Debug\TayaIT.Enterprise.EMadbatah.DAL.dll
+C:\tayawork\Abu Dhabi Work\EMadbatahWeb\TayaIT.Enterprise.EMadbatah.DAL\obj\Debug\TayaIT.Enterprise.EMadbatah.DAL.pdb

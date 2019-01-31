@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Emadbatah>
+    <Conf>
+        <VecSysServerPath>\\192.168.0.90\Share\emadbatah\SimulateVecsysServerFolder</VecSysServerPath>
+        <AudioServerPath>\\192.168.0.90\Share\emadbatah\SimulateAudioServerFolder</AudioServerPath>
+        <EParlimrntWebServiceURL>http://localhost:10001/EPService.svc</EParlimrntWebServiceURL>
+        <OfflineDevMode>True</OfflineDevMode>
+        <AllowedDomainName>hp-hp</AllowedDomainName>
+        <DefaultAdmin>
+            <DomainUserName>hp-hp\hp</DomainUserName>
+            <Name>أسامه ندا لوكال</Name>
+            <Email>unada@tayait.com</Email>
+        </DefaultAdmin>
+        <Cookies>
+            <PrefCookieName>cookie_preferences</PrefCookieName>
+        </Cookies>
+        <EmailServer>
+            <Host>smtp.gmail.com</Host>
+            <Port>587</Port>
+            <!--<Port>465</Port>-->
+            <EnableSSL>True</EnableSSL>
+            <DeliveryMethod>Network</DeliveryMethod>
+            <UserName>fnc@tayamail.com</UserName>
+            <Password>A24681012</Password>
+        </EmailServer>
+        <EnableEmailNotifications>True</EnableEmailNotifications>
+        <Logging>
+            <CodeExecTraceEnabled>False</CodeExecTraceEnabled>
+            <ErrorLoggingEnabled>True</ErrorLoggingEnabled>
+        </Logging>
+    </Conf>
+</Emadbatah>

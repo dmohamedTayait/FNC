@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8761FA3-681C-46FB-AEEE-95BD530D735E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TayaIT.Enterprise.EMadbatah.Web.Framework</RootNamespace>
+    <AssemblyName>TayaIT.Enterprise.EMadbatah.Web.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminHandler.cs" />
+    <Compile Include="BaseHandler.cs" />
+    <Compile Include="EditSessionHandler.cs" />
+    <Compile Include="ReorderHandler.cs" />
+    <Compile Include="ReviewerHandler.cs" />
+    <Compile Include="SessionHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionStartHandler.cs" />
+    <Compile Include="FileHandler.cs" />
+    <Compile Include="WebFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TayaIT.Enterprise.EMadbatah.BLL\TayaIT.Enterprise.EMadbatah.BLL.csproj">
+      <Project>{B98BAAAD-3F4A-4260-AB73-ED574924D28A}</Project>
+      <Name>TayaIT.Enterprise.EMadbatah.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TayaIT.Enterprise.EMadbatah.Config\TayaIT.Enterprise.EMadbatah.Config.csproj">
+      <Project>{30DA8156-2BF3-43C9-86A9-FB0EFA1D92EA}</Project>
+      <Name>TayaIT.Enterprise.EMadbatah.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TayaIT.Enterprise.EMadbatah.DAL\TayaIT.Enterprise.EMadbatah.DAL.csproj">
+      <Project>{B0FCFCD0-9BF1-43F7-A98E-D4EE14E3A891}</Project>
+      <Name>TayaIT.Enterprise.EMadbatah.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TayaIT.Enterprise.EMadbatah.Localization\TayaIT.Enterprise.EMadbatah.Localization.csproj">
+      <Project>{90DC80E1-81C7-4DFE-857C-C3E12EA3CA6C}</Project>
+      <Name>TayaIT.Enterprise.EMadbatah.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TayaIT.Enterprise.EMadbatah.Model\TayaIT.Enterprise.EMadbatah.Model.csproj">
+      <Project>{FBC69697-B34A-4897-8F2A-D325C05EA455}</Project>
+      <Name>TayaIT.Enterprise.EMadbatah.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TayaIT.Enterprise.EMadbatah.Util.Web\TayaIT.Enterprise.EMadbatah.Util.Web.csproj">
+      <Project>{84D21054-E26E-44BB-90F4-1E6CA5C37250}</Project>
+      <Name>TayaIT.Enterprise.EMadbatah.Util.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TayaIT.Enterprise.EMadbatah.Util\TayaIT.Enterprise.EMadbatah.Util.csproj">
+      <Project>{D512000F-449B-497F-8023-D48DB046AC27}</Project>
+      <Name>TayaIT.Enterprise.EMadbatah.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TayaIT.Enterprise.EMadbatah.Vecsys\TayaIT.Enterprise.EMadbatah.Vecsys.csproj">
+      <Project>{700D6C59-7736-4A04-A562-CB6EACFFE303}</Project>
+      <Name>TayaIT.Enterprise.EMadbatah.Vecsys</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
